@@ -1,0 +1,7 @@
+# Microsoft Office temporary files
+~$*
+
+# project virtual environment
+.cvenv
+
+*.mp4
