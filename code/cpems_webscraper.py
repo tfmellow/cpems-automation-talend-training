@@ -1,4 +1,5 @@
 # imports
+import os
 import threading
 import pyautogui
 import time
@@ -9,6 +10,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+
+
+# set download directory
+current_dir = os.getcwd()
+download_dir = os.path.join(current_dir, "talend_input")
+
+if not os.path.exists(download_dir):
+    os.makedirs(download_dir)
+    print(f"Created directory: {download_dir}")
 
 # TODO: find other way to bypass certificate selection
 def bypass_certificate_popup():
@@ -22,6 +32,14 @@ def bypass_certificate_popup():
 chrome_options = Options()
 chrome_options.add_argument("--ignore-certificate-errors")  # to ignore "Advanced > Proceed" warning
 chrome_options.add_experimental_option("detach", True)      # keeps window open after script ends
+
+preferences = {
+    "download.default_directory": download_dir, # where to download and save files
+    "download.prompt_for_download": False,      # bypass download confirmation popup
+    "directory_upgrade": True,
+    "safebrowsing.enabled": True                
+}
+chrome_options.add_experimental_option("prefs", preferences)
 
 # locates appropriate chromedriver.exe
 service = Service(ChromeDriverManager().install())
@@ -44,11 +62,11 @@ try:
     print("Entering credentials...")
 
     # locate username field
-    username_field = wait.until(EC.presence_of_element_located((By.NAME, "username")))
+    username_field = wait.until(EC.visibility_of_element_located((By.NAME, "username")))
     username_field.send_keys("FRLCGEN")
 
     # locate password field
-    password_field = wait.until(EC.presence_of_element_located((By.NAME, "password")))
+    password_field = wait.until(EC.visibility_of_element_located((By.NAME, "password")))
     password_field.send_keys('W3smCa$3cNan!')
     
     # click login button
@@ -58,7 +76,7 @@ try:
     # TODO: add assertion for successful login
 
     # find energy
-    energy_btn = wait.until(EC.presence_of_element_located((By.XPATH, "//i[@class='fa fa-cubes']")))
+    energy_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//i[@class='fa fa-cubes']")))
     energy_btn.click()
 
     # TODO: difference of using '.presence_of_element_located' and '.element_to_be_clickable'
@@ -69,23 +87,31 @@ try:
     occ_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//i[@class='fa fa fa-cube'])[1]")))
     occ_btn.click()
 
+    # wait for table to load    
+    wait.until(EC.presence_of_element_located((By.XPATH, "//table[@id='occ-grid']/tbody/tr")))
+    print("Loading OCC data...")
+
     # show entries
-    num_entries = wait.until(EC.presence_of_element_located((By.NAME, "occ-grid_length")))
+    num_entries = wait.until(EC.element_to_be_clickable((By.NAME, "occ-grid_length")))
     num_entries.click()
 
     # TODO: try using selenium's Select class
     max_entries = wait.until(EC.element_to_be_clickable((By.XPATH, "//option[text()='1500']")))
     max_entries.click()
 
+    # wait for table to load    
+    wait.until(EC.presence_of_element_located((By.XPATH, "//table[@id='occ-grid']/tbody/tr")))
+    print("Loading OCC data...")
+    
     # TODO: pagination
 
     # select all 
-    select_btn = wait.until(EC.presence_of_element_located((By.XPATH, "//button[@class='dt-button buttons-select-all']")))
+    select_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='dt-button buttons-select-all']")))
     select_btn.click()
 
-    # export excel file
-    export_btn = wait.until(EC.presence_of_element_located((By.XPATH, "//button[@class='dt-button buttons-excel buttons-html5']")))
-    export_btn.click()
+    # # export excel file
+    # export_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='dt-button buttons-excel buttons-html5']")))
+    # export_btn.click()
 
     print("Web scraping successful.")
 
