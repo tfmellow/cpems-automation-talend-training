@@ -4,4 +4,25 @@
 # project virtual environment
 .cvenv
 
+# talend workspace junk
+.metadata/
+.config/
+p2/
+configuration/
+.JETEmitters/
+
+# talend project junk
+**/.Java/
+**/temp/
+**/bin/
+**/talend.project.local
+**/.settings/
+**/sqlPatterns/
+
+# talend build and maven junk
+**/poms/
+**/target/
+**/*.screenshot
+
+
 *.mp4
