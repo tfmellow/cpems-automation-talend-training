@@ -11,22 +11,31 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
+# TODO: find other way to bypass certificate selection
+def bypass_certificate_popup():
+    """Wait for certificate popup and hit enter"""
+    print("Waiting for popup...")
+    time.sleep(6)
+    pyautogui.press('enter')
+    print("'Enter' key pressed.")
 
 # set download directory
 current_dir = os.getcwd()
 download_dir = os.path.join(current_dir, "talend_input")
 
+print('checking directory...')
 if not os.path.exists(download_dir):
     os.makedirs(download_dir)
     print(f"Created directory: {download_dir}")
-
-# TODO: find other way to bypass certificate selection
-def bypass_certificate_popup():
-    """Wait for certificate popup and hit enter"""
-    print("Waiting for popup...")
-    time.sleep(6) 
-    pyautogui.press('enter')
-    print("'Enter' key pressed.")
+else:
+    # cleanup previous download
+    target_file = os.path.join(download_dir, 'OCC Listing.xlsx')
+    if os.path.exists(target_file):
+        try:
+            os.remove(target_file)
+            print(f'Deleted old file: {target_file}')
+        except Exception as e:
+            print(f'Error deleting old file: {e}')
 
 # configuration
 chrome_options = Options()
@@ -37,7 +46,7 @@ preferences = {
     "download.default_directory": download_dir, # where to download and save files
     "download.prompt_for_download": False,      # bypass download confirmation popup
     "directory_upgrade": True,
-    "safebrowsing.enabled": True                
+    "safebrowsing.enabled": True
 }
 chrome_options.add_experimental_option("prefs", preferences)
 
@@ -51,7 +60,7 @@ driver.maximize_window()
 # TODO: add delay on button clicking
 try:
     # bypass certificate while website is loading
-    threading.Thread(target=bypass_certificate_popup, daemon=True).start() 
+    threading.Thread(target=bypass_certificate_popup, daemon=True).start()
 
     print("Accessing CPEMS website...")
     driver.get("https://cpems.pemc.ph/login")
@@ -68,14 +77,14 @@ try:
     # locate password field
     password_field = wait.until(EC.visibility_of_element_located((By.NAME, "password")))
     password_field.send_keys('W3smCa$3cNan!')
-    
+
     # click login button
     login_btn = wait.until(EC.presence_of_element_located((By.XPATH, "//button[@type='submit']")))
     login_btn.click()
 
     # TODO: add assertion for successful login
 
-    # find energy
+    # find energy > transctions > occ
     energy_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//i[@class='fa fa-cubes']")))
     energy_btn.click()
 
@@ -87,31 +96,36 @@ try:
     occ_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//i[@class='fa fa fa-cube'])[1]")))
     occ_btn.click()
 
-    # wait for table to load    
-    wait.until(EC.presence_of_element_located((By.XPATH, "//table[@id='occ-grid']/tbody/tr")))
-    print("Loading OCC data...")
+    print('5 second pause')
+    time.sleep(5)
 
-    # show entries
+    # show number of entries
+    print('show number of entries...')
     num_entries = wait.until(EC.element_to_be_clickable((By.NAME, "occ-grid_length")))
     num_entries.click()
 
     # TODO: try using selenium's Select class
     max_entries = wait.until(EC.element_to_be_clickable((By.XPATH, "//option[text()='1500']")))
     max_entries.click()
+    print('clicked 1500')
 
-    # wait for table to load    
-    wait.until(EC.presence_of_element_located((By.XPATH, "//table[@id='occ-grid']/tbody/tr")))
-    print("Loading OCC data...")
-    
+    # give time to select all available rows
+    print('5 second pause')
+    time.sleep(5)
+
     # TODO: pagination
 
-    # select all 
+    # select all
+    print('selecting all rows...')
     select_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='dt-button buttons-select-all']")))
     select_btn.click()
 
-    # # export excel file
-    # export_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='dt-button buttons-excel buttons-html5']")))
-    # export_btn.click()
+    print('5 second pause')
+    time.sleep(5)
+
+    # export excel file
+    export_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='dt-button buttons-excel buttons-html5']")))
+    export_btn.click()
 
     print("Web scraping successful.")
 
