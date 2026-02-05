@@ -20,8 +20,9 @@ def bypass_certificate_popup():
     print("'Enter' key pressed.")
 
 # set download directory
-current_dir = os.getcwd()
-download_dir = os.path.join(current_dir, "talend_input")
+current_dir = os.path.dirname(os.path.abspath(__file__)) 
+project_root = os.path.dirname(current_dir)
+download_dir = os.path.join(project_root, "talend_input")
 
 print('checking directory...')
 if not os.path.exists(download_dir):
