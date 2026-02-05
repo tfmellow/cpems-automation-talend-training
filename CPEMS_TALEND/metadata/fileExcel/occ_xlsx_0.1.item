@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:FileExcelConnection xmi:id="_Z66OIAAHEfGMessrj8WXkg" name="occ" dataPackage="_Z66OIQAHEfGMessrj8WXkg" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/OCC Listing.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="2" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;" generationMode="USER_MODE">
+  <TalendMetadata:FileExcelConnection xmi:id="_Z66OIAAHEfGMessrj8WXkg" name="occ.xlsx" id="_Z6wdIAAHEfGMessrj8WXkg" dataPackage="_Z66OIQAHEfGMessrj8WXkg" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/OCC Listing.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="2" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;" generationMode="USER_MODE">
     <sheetColumns>A</sheetColumns>
     <sheetColumns>B</sheetColumns>
     <sheetColumns>C</sheetColumns>
@@ -33,7 +33,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLgAHEfGMessrj8WXkg" label="File" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLwAHEfGMessrj8WXkg" label="Status" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OMAAHEfGMessrj8WXkg" label="Registered_Capacity" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OMQAHEfGMessrj8WXkg" label="Offered_Capacity" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OMQAHEfGMessrj8WXkg" label="Offered_Capacity" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>

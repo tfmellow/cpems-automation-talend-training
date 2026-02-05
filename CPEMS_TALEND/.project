@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>temp/OCC_Logic_0.1.jobscript</name>
+			<type>1</type>
+			<locationURI>WORKSPACE_LOC/CPEMS_TALEND/code/jobscripts/OCC_Logic_0.1.item</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

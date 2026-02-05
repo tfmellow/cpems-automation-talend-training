@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_RwkQcAJYEfGtd7uBl15eqg" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_GrqjIAJZEfGtd7uBl15eqg" comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training"/>
-  <contextParameter xmi:id="_KXyn4AJfEfGYU9RPx5hVKA" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
-  <contextParameter xmi:id="_KXyn4QJfEfGYU9RPx5hVKA" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
-  <contextParameter xmi:id="_5DJzUAKKEfGYU9RPx5hVKA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_RwkQcAJYEfGtd7uBl15eqg" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_GrqjIAJZEfGtd7uBl15eqg" comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training"/>
+    <contextParameter xmi:id="_KXyn4AJfEfGYU9RPx5hVKA" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
+    <contextParameter xmi:id="_KXyn4QJfEfGYU9RPx5hVKA" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
+    <contextParameter xmi:id="_5DJzUAKKEfGYU9RPx5hVKA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
+    <contextParameter xmi:id="_TcvbkAKeEfGBo7nHsokSEw" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_aHdnIAKeEfGBo7nHsokSEw" confirmationNeeded="false" hide="false" name="Testing">
+    <contextParameter xmi:id="_aHdnIQKeEfGBo7nHsokSEw" comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training"/>
+    <contextParameter xmi:id="_aHdnIgKeEfGBo7nHsokSEw" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
+    <contextParameter xmi:id="_aHdnIwKeEfGBo7nHsokSEw" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
+    <contextParameter xmi:id="_aHdnJAKeEfGBo7nHsokSEw" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
+    <contextParameter xmi:id="_aHdnJQKeEfGBo7nHsokSEw" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
+  </talendfile:ContextType>
+</xmi:XMI>
