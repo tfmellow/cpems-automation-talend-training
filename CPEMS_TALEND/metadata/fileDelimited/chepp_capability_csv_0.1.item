@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_R-1xoAKHEfGYU9RPx5hVKA" name="chepp_capability.csv" dataPackage="_R-1xoQKHEfGYU9RPx5hVKA" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_R-1xoQKHEfGYU9RPx5hVKA" name="default" dataManager="_R-1xoAKHEfGYU9RPx5hVKA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_R-1xogKHEfGYU9RPx5hVKA" id="_JOZPsAKHEfGYU9RPx5hVKA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xowKHEfGYU9RPx5hVKA" label="Date" length="-1" talendType="id_Date" pattern="&quot;MM/dd/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xpAKHEfGYU9RPx5hVKA" label="Interval" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xpQKHEfGYU9RPx5hVKA" label="Pantabangan_Elevation" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xpgKHEfGYU9RPx5hVKA" label="Casecnan_Initial_Volume" length="7" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xpwKHEfGYU9RPx5hVKA" label="Casecnan_Elevation" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R-1xqAKHEfGYU9RPx5hVKA" label="CHEPP_Capability" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

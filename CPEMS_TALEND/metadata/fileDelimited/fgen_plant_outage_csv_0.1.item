@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_8pERcQKHEfGYU9RPx5hVKA" name="fgen_plant_outage.csv" id="_8pERcAKHEfGYU9RPx5hVKA" dataPackage="_8pERcgKHEfGYU9RPx5hVKA" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/FGEN_Plant_Outage_20260125.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_8pERcgKHEfGYU9RPx5hVKA" name="default" dataManager="_8pERcQKHEfGYU9RPx5hVKA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8pERcwKHEfGYU9RPx5hVKA" id="_ZwkBgAKHEfGYU9RPx5hVKA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdAKHEfGYU9RPx5hVKA" label="STATUS" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdQKHEfGYU9RPx5hVKA" label="PLANT" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdgKHEfGYU9RPx5hVKA" label="START_INTERVAL" length="-1" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:MM&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdwKHEfGYU9RPx5hVKA" label="END_INTERVAL" length="-1" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:MM&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pEReAKHEfGYU9RPx5hVKA" label="DESCRIPTION" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

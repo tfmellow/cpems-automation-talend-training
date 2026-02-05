@@ -15,14 +15,16 @@ configuration/
 **/.Java/
 **/temp/
 **/bin/
+**/migration.log
+**/TDQ_Libraries/
 **/talend.project.local
 **/.settings/
 **/sqlPatterns/
 
+
 # talend build and maven junk
 **/poms/
 **/target/
-**/*.screenshot
 
 
 *.mp4
