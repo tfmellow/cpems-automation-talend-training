@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:FileExcelConnection xmi:id="_Z66OIAAHEfGMessrj8WXkg" name="occ.xlsx" id="_Z6wdIAAHEfGMessrj8WXkg" dataPackage="_Z66OIQAHEfGMessrj8WXkg" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/OCC Listing.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="2" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;" generationMode="USER_MODE">
+  <TalendMetadata:FileExcelConnection xmi:id="_Z66OIAAHEfGMessrj8WXkg" name="occ.xlsx" id="_Z6wdIAAHEfGMessrj8WXkg" dataPackage="_Z66OIQAHEfGMessrj8WXkg" Server="Localhost 127.0.0.1" FilePath="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="CPEMS_FRLC_CASECN_OCC_20260125" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="CPEMS_FRLC_CASECN_OCC_20260125:w&#xA;" generationMode="USER_MODE">
     <sheetColumns>A</sheetColumns>
     <sheetColumns>B</sheetColumns>
     <sheetColumns>C</sheetColumns>
@@ -27,8 +27,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKAAHEfGMessrj8WXkg" label="Probable_Breach_Flag" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKQAHEfGMessrj8WXkg" label="Violation_Type" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKgAHEfGMessrj8WXkg" label="Reasons" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKwAHEfGMessrj8WXkg" label="Date_From" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLAAHEfGMessrj8WXkg" label="Date_To" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKwAHEfGMessrj8WXkg" label="Date_From" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLAAHEfGMessrj8WXkg" label="Date_To" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLQAHEfGMessrj8WXkg" label="Brief_Description" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLgAHEfGMessrj8WXkg" label="File" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OLwAHEfGMessrj8WXkg" label="Status" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
