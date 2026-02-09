@@ -6,17 +6,23 @@
     <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_IfgMkgKLEfGYU9RPx5hVKA"/>
     <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_IfgMkwKLEfGYU9RPx5hVKA"/>
   </context>
-  <context confirmationNeeded="false" hide="false" name="Testing">
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_lAeYEAKeEfGBo7nHsokSEw"/>
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_lAeYEQKeEfGBo7nHsokSEw"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_lAeYEgKeEfGBo7nHsokSEw"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_lAeYEwKeEfGBo7nHsokSEw"/>
-  </context>
   <context confirmationNeeded="false" hide="false" name="laptop">
     <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_-mY_4AMuEfGFjLgpKyJdZw"/>
     <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_-mY_4QMuEfGFjLgpKyJdZw"/>
     <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_-mY_4gMuEfGFjLgpKyJdZw"/>
     <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_-mY_4wMuEfGFjLgpKyJdZw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="d_desktop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_EyzZcAWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_EyzZcQWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_EyzZcgWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_EyzZcwWNEfGFwuioJQ2HhA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="d_laptop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_EyzZdAWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_EyzZdQWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_EyzZdgWNEfGFwuioJQ2HhA"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_EyzZdwWNEfGFwuioJQ2HhA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -61,7 +67,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Wz5Uo3aRpCPfYM0h8Q4ARL5uR4zxteVwOlE89MdN" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:grQb5IIiDQJLhKyNHQU3cByaeCt4dAFEcj4ZCxw+" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -76,7 +82,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Documents/GitHub/FGEN/CPEMS_Automation_Workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -96,7 +102,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:K73Ezu18KAiljqB+NVm2eFs5GN81b7y7W3PYEMlZ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ztqi9WPwTT5cnJ3zOi1WEshsuud/hTrb7q8i+nx/" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -750,15 +756,15 @@
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
       <column comment="" key="false" length="16" name="STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="PLANT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="16" name="STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="PLANT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -797,8 +803,8 @@
     <metadata connector="FLOW" label="metadata" name="tLogRow_5">
       <column comment="" key="false" length="16" name="STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="PLANT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:MM&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="START_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="END_INTERVAL" nullable="true" pattern="&quot;MM/dd/yyyy HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1035,7 +1041,7 @@
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="false" posX="880" posY="1000" sizeHeight="81" sizeWidth="521" text="For U01 and U02&#xD;&#xA;TODO: use tAggregateRow to group by Trading_Hour &#xD;&#xA;&#xD;&#xA;try to output to tHashOutput or tBuffer?">
+  <note opaque="false" posX="880" posY="1000" sizeHeight="121" sizeWidth="561" text="For U01 and U02&#xD;&#xA;TODO: use tAggregateRow to group by Trading_Hour &#xD;&#xA;&#xD;&#xA;try to output to tHashOutput or tBuffer?">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
