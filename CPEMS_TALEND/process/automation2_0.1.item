@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="desktop" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="desktop">
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vg6hQAL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vg6hQQL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vg6hQgL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vg6hQwL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_vg6hRAL8EfGFjLgpKyJdZw"/>
-  </context>
-  <context confirmationNeeded="false" hide="false" name="d_desktop">
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vg6hQAL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vg6hQQL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vg6hQgL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vg6hQwL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_vg6hRAL8EfGFjLgpKyJdZw"/>
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_nXfvAAWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_nXfvAQWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_nXfvAgWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_nXfvAwWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_nXfvBAWtEfGElNbpEA6M0Q"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="d_laptop">
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vg6hQAL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vg6hQQL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vg6hQgL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vg6hQwL8EfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_vg6hRAL8EfGFjLgpKyJdZw"/>
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_nXfvBQWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_nXfvBgWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_nXfvBwWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_nXfvCAWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_nXfvCQWtEfGElNbpEA6M0Q"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="d_desktop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_nXfvCgWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_nXfvCwWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_nXfvDAWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_nXfvDQWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_nXfvDgWtEfGElNbpEA6M0Q"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="laptop">
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_HQPgsAMmEfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_HQPgsQMmEfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_HQPgsgMmEfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_HQPgswMmEfGFjLgpKyJdZw"/>
-    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_HQPgtAMmEfGFjLgpKyJdZw"/>
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_nXfvDwWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_nXfvEAWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_nXfvEQWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_nXfvEgWtEfGElNbpEA6M0Q"/>
+    <contextParameter comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_nXfvEwWtEfGElNbpEA6M0Q"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -209,7 +209,7 @@
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="&quot;NVPXMJY-BG96845&quot;"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="&quot;gprgonzalez&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:dJLFdIpXC0Upkmjx8WgufRVaeXYJ/Tw8xvELlJgRpM4sUDarCmJXRU+Sf1AnBP6cHvHK1Q=="/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:ye5effM3Gf3ObIvHWUxSm8H+ZDjrbRBPgWNuoO5NEbpL1k+KwUxoKu9MRIO9r7JezNwwxw=="/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="&quot;COMPUTE_WH&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="&quot;PUBLIC&quot;"/>
@@ -257,7 +257,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.project_path + context.input + context.excelFile"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ltRHYqvDGJDqDeqbILqC32KuPz08vqfFkGVVzmmC"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:kvd0dzKBUyf0Hcb3F3g949dRUpP6Kc88gAy7n+lw"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;CPEMS_FRLC_CASECN_OCC_20260125&quot;" id="0"/>
@@ -409,7 +409,7 @@
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -457,7 +457,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="OCC Data"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_3">
+    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
       <column comment="" key="false" length="0" name="Column0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -498,7 +498,7 @@
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -520,7 +520,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Total_Offered_Capacity"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_4">
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
       <column comment="" key="false" length="16" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -545,7 +545,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.project_path + context.input + context.excelFile"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:HDVRXfjX3v12p8cYlFhHpcJpvVYJAFceNsQoRKGH"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:SrkLTFB8OrkGhO0qm8cM4+OPAVjVQAyJ8FBgcLfE"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;CPEMS_FRLC_CASECN_OCC_20260125&quot;" id="0"/>
@@ -696,12 +696,24 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;D:/Documents/GitHub/FGEN/cpems-automation-talend-training/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="false" length="16" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_M_bqMAL8EfGFjLgpKyJdZw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Dv2ssAWjEfGxLsKd5wsNjA-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -731,7 +743,7 @@
       <column comment="" key="false" length="-1" name="outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="Column0" expression="occ.Column0  " type="id_String" nullable="true"/>
@@ -790,18 +802,6 @@
         <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
-  </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="960">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
-    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
-    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;D:/Documents/GitHub/FGEN/cpems-automation-talend-training/in.hash&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tHashInput_1">
-      <column comment="" key="false" length="16" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
-    </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="1120" sizeX="40" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -976,7 +976,7 @@
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="960">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1029,7 +1029,7 @@
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out" name="tLogRow_2">
+    <metadata connector="FLOW" label="out" name="tLogRow_3">
       <column comment="" key="false" length="0" name="Column0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1055,7 +1055,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.project_path + context.input + context.excelFile"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:C8+57+c8NzzUYS7l7X4xJiHQFppbfY3tn9Qq/+Zp"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:AiHDrqB4W/mibkr/54FNjy3NimG5T5+e+FMuvmZu"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;CPEMS_FRLC_CASECN_OCC_20260125&quot;" id="0"/>
@@ -1207,7 +1207,7 @@
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1255,7 +1255,7 @@
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+    <metadata connector="FLOW" label="metadata" name="tLogRow_4">
       <column comment="" key="false" length="0" name="Column0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1413,18 +1413,18 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tLogRow_3">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tFileInputExcel_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tAggregateRow_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tAggregateRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tLogRow_4">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Total_Offered_Capacity" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
@@ -1433,7 +1433,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tHashOutput_1">
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tHashOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
@@ -1441,13 +1441,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="occ" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="tradehr_TOC" lineStyle="8" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tradehr_TOC" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="CHEPP" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1457,7 +1457,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="plant_outage" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tLogRow_1">
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
@@ -1497,13 +1497,13 @@
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="true" posX="1600" posY="480" sizeHeight="81" sizeWidth="481" text="Offered Capacity&#xD;&#xA;&#xD;&#xA;found in web scraped data: CPEMS_FRLC_CASECN_OCC_20260125">
+  <note opaque="false" posX="1600" posY="320" sizeHeight="120" sizeWidth="520" text="Questions/Problems/Look into:&#xD;&#xA;- Coding inside snowflake table (possibly yes, look into)&#xD;&#xA;- Most efficient process">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="false" posX="1600" posY="320" sizeHeight="120" sizeWidth="520" text="Questions/Problems/Look into:&#xD;&#xA;- Coding inside snowflake table (possibly yes, look into)&#xD;&#xA;- Most efficient process">
+  <note opaque="true" posX="1600" posY="480" sizeHeight="81" sizeWidth="481" text="Offered Capacity&#xD;&#xA;&#xD;&#xA;found in web scraped data: CPEMS_FRLC_CASECN_OCC_20260125">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
@@ -1542,10 +1542,8 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="get file and rename"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
@@ -1557,10 +1555,8 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="print &quot;Success!&quot;"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
@@ -1569,10 +1565,8 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="load OCC data"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
   <subjob>
