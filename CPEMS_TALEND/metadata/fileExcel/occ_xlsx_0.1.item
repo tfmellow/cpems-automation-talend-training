@@ -23,7 +23,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OJAAHEfGMessrj8WXkg" label="Id" length="8" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OJQAHEfGMessrj8WXkg" label="Resource_ID" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OJgAHEfGMessrj8WXkg" label="Classification" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OJwAHEfGMessrj8WXkg" label="Trading_Hour" length="16" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OJwAHEfGMessrj8WXkg" label="Trading_Hour" length="20" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKAAHEfGMessrj8WXkg" label="Probable_Breach_Flag" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKQAHEfGMessrj8WXkg" label="Violation_Type" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z66OKgAHEfGMessrj8WXkg" label="Reasons" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>

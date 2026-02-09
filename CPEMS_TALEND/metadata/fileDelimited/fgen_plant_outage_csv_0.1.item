@@ -5,8 +5,8 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8pERcwKHEfGYU9RPx5hVKA" id="_ZwkBgAKHEfGYU9RPx5hVKA" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdAKHEfGYU9RPx5hVKA" label="STATUS" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdQKHEfGYU9RPx5hVKA" label="PLANT" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdgKHEfGYU9RPx5hVKA" label="START_INTERVAL" length="16" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:mm:ss&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdwKHEfGYU9RPx5hVKA" label="END_INTERVAL" length="16" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdgKHEfGYU9RPx5hVKA" label="START_INTERVAL" length="20" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pERdwKHEfGYU9RPx5hVKA" label="END_INTERVAL" length="20" talendType="id_Date" pattern="&quot;MM/dd/yyyy HH:mm:ss&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8pEReAKHEfGYU9RPx5hVKA" label="DESCRIPTION" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
