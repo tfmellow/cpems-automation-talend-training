@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_wf4TcAyKEfGi3_Qa9l5WMw" confirmationNeeded="false" hide="false" name="desktop">
+    <contextParameter xmi:id="_wf4TcQyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_wf4TcgyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_wf4TcwyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter xmi:id="_wf4TdAyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII"/>
+    <contextParameter xmi:id="_wf4TdQyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_File" prompt="chepp_capability_csv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wf4TdgyKEfGi3_Qa9l5WMw" confirmationNeeded="false" hide="false" name="laptop">
+    <contextParameter xmi:id="_wf4TdwyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_wf4TeAyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter xmi:id="_wf4TeQyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter xmi:id="_wf4TegyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII"/>
+    <contextParameter xmi:id="_wf4TewyKEfGi3_Qa9l5WMw" comment="" name="chepp_capability_csv_File" prompt="chepp_capability_csv_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv"/>
+  </talendfile:ContextType>
+</xmi:XMI>

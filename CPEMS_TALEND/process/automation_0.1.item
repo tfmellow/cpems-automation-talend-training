@@ -265,10 +265,9 @@
     <elementParameter field="FILE" name="FILE_NAME" value="((String)globalMap.get(&quot;tFileCopy_1_DESTINATION_FILEPATH&quot;)) "/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="760" sizeX="80" sizeY="40">
+  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="760" sizeX="80" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dA" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HvE6UAWuEfGElNbpEA6M0Q"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -312,9 +311,8 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="760">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;current_logic&quot;, input_row.COMPLIANCE_LOGIC);&#xD;&#xA;globalMap.put(&quot;current_reason&quot;, input_row.REASONS);&#xD;&#xA;globalMap.put(&quot;current_desc&quot;, input_row.BRIEF_DESCRIPTION);&#xD;&#xA;globalMap.put(&quot;current_attach&quot;, input_row.ATTACHMENTS);&#xD;&#xA;&#xD;&#xA;output_row.PLANT_ENTITY = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.RESOURCE_ID = input_row.RESOURCE_ID;&#xD;&#xA;output_row.COMPLIANCE_TYPE = input_row.COMPLIANCE_TYPE;&#xD;&#xA;output_row.LOGIC_PRIORITY = input_row.LOGIC_PRIORITY;&#xD;&#xA;output_row.COMPLIANCE_LOGIC = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;output_row.ENTRY_TAG = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.REASONS = input_row.REASONS;&#xD;&#xA;output_row.BRIEF_DESCRIPTION = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;output_row.ATTACHMENTS = input_row.ATTACHMENTS;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -330,9 +328,8 @@
       <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="760">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -380,67 +377,40 @@
       <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="SnowflakeRow" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="920">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNSb3c" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HvE6UAWuEfGElNbpEA6M0Q"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+  <node componentName="tHSQLDbRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n8Ycf+HOh9q5OVSVwedfzoWGREEu6sViVyZiymmE"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>tagging&lt;/b>"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="&quot;YHSLVLG-FIRSTGEN&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="&quot;grgonzalez&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:Ccj4mz+XVSqBe0CSmwBy0ia8W7n5o3P2oFpgoiv8VyrG6eTT4SZUh7zUGas=" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="&quot;DEMO_WH&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="&quot;MAPPING&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.database" value="&quot;DEV&quot;" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.shareConnection" value="false" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="OCC_DATA"/>
-    <elementParameter field="MEMO_SQL" name="configuration.sqlQuery" value="&quot;UPDATE OCC_DATA &#xD;&#xA;SET &#xD;&#xA;    REASON = '&quot; + (String)globalMap.get(&quot;current_reason&quot;) + &quot;', &#xD;&#xA;    BRIEF_DESCRIPTION = '&quot; + (String)globalMap.get(&quot;current_desc&quot;) + &quot;',&#xD;&#xA;    ATTACHMENTS = '&quot; + (String)globalMap.get(&quot;current_attach&quot;) + &quot;'&#xD;&#xA;WHERE REASON IS NULL &#xD;&#xA;  AND (&quot; + (String)globalMap.get(&quot;current_logic&quot;) + &quot;)&quot;"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.loginTimeout" value="15" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;" show="false"/>
-    <elementParameter field="CHECK" name="configuration.usePreparedStatement" value="false"/>
-    <elementParameter field="TABLE" name="configuration.preparedStatementParameters" show="false"/>
-    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
-    <elementParameter field="CHECK" name="configuration.useSessionTimezone" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <metadata connector="FLOW" name="tDBRow_1">
-      <column comment="" key="false" length="100" name="PLANT_ENTITY" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="RESOURCE_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="COMPLIANCE_TYPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="LOGIC_PRIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="COMPLIANCE_LOGIC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="ENTRY_TAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="REASONS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="BRIEF_DESCRIPTION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="reject" name="reject">
-      <column comment="" key="false" length="100" name="PLANT_ENTITY" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="RESOURCE_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="COMPLIANCE_TYPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="LOGIC_PRIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="COMPLIANCE_LOGIC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="ENTRY_TAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="REASONS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="BRIEF_DESCRIPTION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE OCC_DATA &#xD;&#xA;SET &#xD;&#xA;    REASONS = '&quot; + (String)globalMap.get(&quot;current_reason&quot;) + &quot;', &#xD;&#xA;    BRIEF_DESCRIPTION = '&quot; + (String)globalMap.get(&quot;current_desc&quot;) + &quot;',&#xD;&#xA;    ATTACHMENTS = '&quot; + (String)globalMap.get(&quot;current_attach&quot;) + &quot;'&#xD;&#xA;WHERE REASONS IS NULL &#xD;&#xA;  AND (&quot; + (String)globalMap.get(&quot;current_logic&quot;) + &quot;)&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1120">
+  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dA" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -494,96 +464,6 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.project_path + context.output + &quot;/CPEMS_FRLC_CASECN_OCC_20260125_SUBMIT.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RESOURCE_ID" id="2"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLASSIFY" id="4"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADING_HOUR" id="6"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROBABLE_BREACH_FLAG" id="8"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VIOLATION_TYPE" id="10"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REASON" id="12"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FROM" id="14"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_TO" id="16"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BRIEF_DESCRIPTION" id="18"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ATTACHMENTS" id="20"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS" id="22"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REGISTERED_CAPACITY" id="24"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OFFERED_CAPACITY" id="26"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_OFFERED_CAPACITY" id="28"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SEASONAL_MAX_CAPABILITY" id="30"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HAS_OUTAGE" id="32"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="33"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ELFwmIA8mtDwNplD6XhoWljsdNViiw81fFtXs151" show="false"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="CHECK" name="USE_SHARED_STRINGS_TABLE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputExcel_2">
-      <column comment="" defaultValue="" key="false" length="38" name="ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="RESOURCE_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CLASSIFY" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TRADING_HOUR" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="-1" sourceType="TIMESTAMPNTZ" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="PROBABLE_BREACH_FLAG" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="VIOLATION_TYPE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="REASON" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DATE_FROM" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="-1" sourceType="TIMESTAMPNTZ" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DATE_TO" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="-1" sourceType="TIMESTAMPNTZ" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="BRIEF_DESCRIPTION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="REGISTERED_CAPACITY" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="OFFERED_CAPACITY" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TOTAL_OFFERED_CAPACITY" nullable="true" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="SEASONAL_MAX_CAPABILITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="HAS_OUTAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="360" sizeX="81" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -600,7 +480,6 @@
   <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="-32" offsetLabelY="6" posX="240" posY="40" sizeX="81" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HvE6UAWuEfGElNbpEA6M0Q"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -625,7 +504,7 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="1320" sizeX="161" sizeY="40">
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1600" sizeX="161" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -1125,15 +1004,15 @@
       <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="File" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="1000" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -1148,7 +1027,7 @@
       <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
@@ -1157,7 +1036,7 @@
       <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out1" minimized="true" columnNameFilter="">
         <mapperTableEntries name="Id" expression="occ.Id " type="id_Integer" nullable="true"/>
@@ -1189,7 +1068,7 @@
         <mapperTableEntries name="Date_From" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm&quot;,TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 01:00&quot;) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Date_To" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 00:00&quot;) : TalendDate.addDate(TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 00:00&quot;), 1, &quot;dd&quot;)  " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Brief_Description" expression=" " type="id_String" nullable="true"/>
-        <mapperTableEntries name="File" expression=" " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Attachments" expression=" " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="occ.Status  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Registered_Capacity" expression="occ.Registered_Capacity  " type="id_Float" nullable="true"/>
         <mapperTableEntries name="Offered_Capacity" expression="occ.Offered_Capacity  " type="id_Float" nullable="true"/>
@@ -1443,8 +1322,8 @@
       <elementValue elementRef="INPUT_COLUMN" value="Date_To" id="17"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="Brief_Description" id="18"/>
       <elementValue elementRef="INPUT_COLUMN" value="Brief_Description" id="19"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="File" id="20"/>
-      <elementValue elementRef="INPUT_COLUMN" value="File" id="21"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Attachments" id="21"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="Status" id="22"/>
       <elementValue elementRef="INPUT_COLUMN" value="Status" id="23"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="Registered_Capacity" id="24"/>
@@ -1478,7 +1357,7 @@
       <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
@@ -1513,7 +1392,7 @@
       <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
@@ -1556,7 +1435,7 @@
       <elementValue elementRef="LENGTH" value="10" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
       <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
       <elementValue elementRef="LENGTH" value="10" id="21"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
       <elementValue elementRef="LENGTH" value="10" id="23"/>
@@ -1586,13 +1465,165 @@
       <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="File" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHSQLDbOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="1160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AiMW2zfCWoQS3N99rBDS2EF5UO7INzu6Ncdalwve"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="hsqldb_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="65"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="66"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="67"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="68"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="70"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="71"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="72"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="73"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="75"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="76"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="77"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="78"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="80"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="81"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="82"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="83"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="84"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Attachments" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="1000" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="Attachments" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="1000" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="SnowflakeOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="800">
@@ -1688,6 +1719,632 @@
       <column comment="" defaultValue="" key="false" length="255" name="code" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="1040">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;occ_memory_db&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xny8efZD9uAUPmhPZycj8hc2tEWLUdV9nKI2w0K5"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from occ_data&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="1040">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="HSQLDB Log Row"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_5">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="SnowflakeRow" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNSb3c" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HvE6UAWuEfGElNbpEA6M0Q"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>tagging&lt;/b>"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="&quot;YHSLVLG-FIRSTGEN&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="&quot;grgonzalez&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:Ccj4mz+XVSqBe0CSmwBy0ia8W7n5o3P2oFpgoiv8VyrG6eTT4SZUh7zUGas=" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="&quot;DEMO_WH&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="&quot;MAPPING&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.database" value="&quot;DEV&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.shareConnection" value="false" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="OCC_DATA"/>
+    <elementParameter field="MEMO_SQL" name="configuration.sqlQuery" value="&quot;UPDATE OCC_DATA &#xD;&#xA;SET &#xD;&#xA;    REASON = '&quot; + (String)globalMap.get(&quot;current_reason&quot;) + &quot;', &#xD;&#xA;    BRIEF_DESCRIPTION = '&quot; + (String)globalMap.get(&quot;current_desc&quot;) + &quot;',&#xD;&#xA;    ATTACHMENTS = '&quot; + (String)globalMap.get(&quot;current_attach&quot;) + &quot;'&#xD;&#xA;WHERE REASON IS NULL &#xD;&#xA;  AND (&quot; + (String)globalMap.get(&quot;current_logic&quot;) + &quot;)&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.loginTimeout" value="15" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.preparedStatementParameters" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useSessionTimezone" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tDBRow_1">
+      <column comment="" key="false" length="100" name="PLANT_ENTITY" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RESOURCE_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="COMPLIANCE_TYPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="LOGIC_PRIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="COMPLIANCE_LOGIC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ENTRY_TAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="REASONS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="BRIEF_DESCRIPTION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" name="reject">
+      <column comment="" key="false" length="100" name="PLANT_ENTITY" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RESOURCE_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="COMPLIANCE_TYPE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="LOGIC_PRIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="COMPLIANCE_LOGIC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ENTRY_TAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="REASONS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="BRIEF_DESCRIPTION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="1080">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;occ_memory_db&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VVSdqOxgonNJwZ9c6VkxLj7kuN77AnVhAPnclQzT"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from occ_data&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1080">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="HSQLDB Log Row2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_6">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="1400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.project_path + context.output + &quot;/CPEMS_FRLC_CASECN_OCC_20260125_SUBMIT.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="27"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ELFwmIA8mtDwNplD6XhoWljsdNViiw81fFtXs151" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_STRINGS_TABLE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_2">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHSQLDbRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="1240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:i0jDpG4d2H6qN0rxgxRHb95Cf8PW4xUWfniiD33m"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update occ_data &#xD;&#xA;&#xD;&#xA;set &#xD;&#xA;    Attachments = 'testing'&#xD;&#xA;WHERE Reasons IS NULL&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="1440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
+    <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9001&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="HSQLDB" show="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;occ_memory_db&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" value="&quot;occ_memory_db&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ymzs2Wn4vo5h4MgcjauRPfFyV73jrfLdz97cw3Hx"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;occ_data&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from occ_data&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1440">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_7" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classify" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Offered_Capacity" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Seasonal_Max_Capability" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Has_Outage" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="3tHSQLDb"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_7">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classify" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_From" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_To" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Attachments" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Seasonal_Max_Capability" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_1" offsetLabelX="0" offsetLabelY="0" source="tSystem_1" target="tFileList_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
@@ -1707,14 +2364,13 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="input_row" lineStyle="0" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="input_row" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tSnowflakeInput_2">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="input_row" lineStyle="0" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="input_row" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1747,22 +2403,18 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tDBRow_1">
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tDBRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_3" offsetLabelX="0" offsetLabelY="0" source="tDBRow_3" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSnowflakeInput_2" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_2" target="tDBClose_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tSnowflakeInput_2" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_2" target="tFileOutputExcel_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputExcel_3">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
@@ -1799,10 +2451,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="occ" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tSnowflakeInput_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
@@ -1826,6 +2474,90 @@
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tSortRow_3" offsetLabelX="0" offsetLabelY="0" source="tSortRow_3" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Status" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Classify" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Offered_Capacity" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Brief_Description" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Violation_Type" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reasons" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Probable_Breach_Flag" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Resource_ID" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Date_From" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Date_To" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Has_Outage" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Trading_Hour" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Seasonal_Max_Capability" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Attachments" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Registered_Capacity" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Total_Offered_Capacity" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_5" offsetLabelX="0" offsetLabelY="0" source="tLogRow_5" target="tSnowflakeInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tFileOutputExcel_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_5" offsetLabelX="0" offsetLabelY="0" source="tDBRow_5" target="tDBInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tLogRow_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
   <note opaque="false" posX="2800" posY="1040" sizeHeight="161" sizeWidth="881" text="TODO:&#xD;&#xA;fix logic for getting Seasonal_Maximum_Capability&#xD;&#xA;- results in null when my occ.Trading_Hour is 1/26/2026  00:00:00&#xD;&#xA;- fixed, checked the Date for CHEPP capability to also consider days that have 0 as 'H'&#xD;&#xA;&#xD;&#xA;used:&#xD;&#xA;Integer.parseInt(TalendDate.formatDate(&quot;H&quot;, occ.Trading_Hour)) == 0 ? 24 : Integer.parseInt(TalendDate.formatDate(&quot;H&quot;, occ.Trading_Hour))&#xD;&#xA;TalendDate.getPartOfDate(&quot;HOUR_OF_DAY&quot;, occ.Trading_Hour) ==  0 ? 24 : TalendDate.getPartOfDate(&quot;HOUR_OF_DAY&quot;, occ.Trading_Hour)&#xD;&#xA;Integer.parseInt(TalendDate.formatDate(&quot;HH&quot;, occ.Trading_Hour)) == 0 ? 24 : Integer.parseInt(TalendDate.formatDate(&quot;HH&quot;, occ.Trading_Hour))">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
@@ -1851,19 +2583,19 @@
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="true" posX="1560" posY="640" sizeHeight="81" sizeWidth="441" text="TODO: Change OCC_DATA table to use hash &#xD;&#xA;instead of ingesting right awy to snowflake">
+  <note opaque="true" posX="2040" posY="680" sizeHeight="81" sizeWidth="441" text="TODO: Change OCC_DATA table to use hash &#xD;&#xA;instead of ingesting right awy to snowflake">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="true" posX="1560" posY="760" sizeHeight="81" sizeWidth="441" text="TODO: Fix Has_Outage column logic">
+  <note opaque="true" posX="2040" posY="800" sizeHeight="81" sizeWidth="441" text="TODO: Fix Has_Outage column logic">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="true" posX="1560" posY="880" sizeHeight="81" sizeWidth="481" text="TODO: change CHEPP and Outage plant directory &#xD;&#xA;to be dynamic ">
+  <note opaque="true" posX="2040" posY="920" sizeHeight="81" sizeWidth="481" text="TODO: change CHEPP and Outage plant directory &#xD;&#xA;to be dynamic ">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
@@ -1943,6 +2675,31 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeOutput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
