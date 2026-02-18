@@ -5,7 +5,6 @@
     <contextParameter xmi:id="_KXyn4AJfEfGYU9RPx5hVKA" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
     <contextParameter xmi:id="_KXyn4QJfEfGYU9RPx5hVKA" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
     <contextParameter xmi:id="_5DJzUAKKEfGYU9RPx5hVKA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_TcvbkAKeEfGBo7nHsokSEw" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_HsQFoAX3EfG2Xvc2OtnFjg" comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_output"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_G73zMAMmEfGFjLgpKyJdZw" confirmationNeeded="false" hide="false" name="laptop">
@@ -13,7 +12,6 @@
     <contextParameter xmi:id="_G73zMgMmEfGFjLgpKyJdZw" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
     <contextParameter xmi:id="_G73zMwMmEfGFjLgpKyJdZw" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
     <contextParameter xmi:id="_G73zNAMmEfGFjLgpKyJdZw" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_G73zNQMmEfGFjLgpKyJdZw" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_HsQFoQX3EfG2Xvc2OtnFjg" comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_output"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_DF8bkAV4EfGFwuioJQ2HhA" confirmationNeeded="false" hide="false" name="d_desktop">
@@ -21,7 +19,6 @@
     <contextParameter xmi:id="_DF8bkgV4EfGFwuioJQ2HhA" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
     <contextParameter xmi:id="_DF8bkwV4EfGFwuioJQ2HhA" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
     <contextParameter xmi:id="_DF8blAV4EfGFwuioJQ2HhA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_DF8blQV4EfGFwuioJQ2HhA" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_HsQFogX3EfG2Xvc2OtnFjg" comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_output"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_DF8blgV4EfGFwuioJQ2HhA" confirmationNeeded="false" hide="false" name="d_laptop">
@@ -29,7 +26,6 @@
     <contextParameter xmi:id="_DF8bmAV4EfGFwuioJQ2HhA" comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_input"/>
     <contextParameter xmi:id="_DF8bmQV4EfGFwuioJQ2HhA" comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/resources"/>
     <contextParameter xmi:id="_DF8bmgV4EfGFwuioJQ2HhA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_DF8bmwV4EfGFwuioJQ2HhA" comment="" name="excelFile" prompt="excelFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_HsQFowX3EfG2Xvc2OtnFjg" comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/talend_output"/>
   </talendfile:ContextType>
 </xmi:XMI>
