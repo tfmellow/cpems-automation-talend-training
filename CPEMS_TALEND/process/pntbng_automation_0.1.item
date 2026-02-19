@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="desktop" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="desktop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vqlCEA1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vqlCEQ1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vqlCEg1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vqlCEw1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_vqlCFA1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Encoding" prompt="pntbng_Encoding?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_mwRuoA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Header" prompt="pntbng_Header?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRuoQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_ThousandSeparator" prompt="pntbng_ThousandSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_mwRuog1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_File" prompt="pntbng_File?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FGHPC_PNTBNG_OCC_20260127.xlsx" internalId="_mwRuow1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_LastColumn" prompt="pntbng_LastColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_mwRupA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_FirstColumn" prompt="pntbng_FirstColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRupQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_DecimalSeparator" prompt="pntbng_DecimalSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_mwRupg1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_nE6WUA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_nE6WUQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_nE6WUg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_File" prompt="daily_gen_File?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/DAILY_GEN_20260127.xlsx" internalId="_nE6WUw1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_nE6WVA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_nE6WVQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_nE6WVg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_nE6WVw1lEfGlZ_5HjPlIug"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="d_laptop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vqlCFQ1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vqlCFg1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vqlCFw1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vqlCGA1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_vqlCGQ1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Encoding" prompt="pntbng_Encoding?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_mwRupw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Header" prompt="pntbng_Header?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRuqA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_ThousandSeparator" prompt="pntbng_ThousandSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_mwRuqQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_File" prompt="pntbng_File?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FGHPC_PNTBNG_OCC_20260127.xlsx" internalId="_mwRuqg1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_LastColumn" prompt="pntbng_LastColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_mwRuqw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_FirstColumn" prompt="pntbng_FirstColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRurA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_DecimalSeparator" prompt="pntbng_DecimalSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_mwRurQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_nE6WWA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_nE6WWQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_nE6WWg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_File" prompt="daily_gen_File?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/DAILY_GEN_20260127.xlsx" internalId="_nE6WWw1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_nE6WXA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_nE6WXQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_nE6WXg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_nE6WXw1lEfGlZ_5HjPlIug"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="d_desktop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vqlCGg1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vqlCGw1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vqlCHA1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vqlCHQ1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_vqlCHg1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Encoding" prompt="pntbng_Encoding?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_mwRurg1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Header" prompt="pntbng_Header?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRurw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_ThousandSeparator" prompt="pntbng_ThousandSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_mwRusA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_File" prompt="pntbng_File?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FGHPC_PNTBNG_OCC_20260127.xlsx" internalId="_mwRusQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_LastColumn" prompt="pntbng_LastColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_mwRusg1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_FirstColumn" prompt="pntbng_FirstColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRusw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_DecimalSeparator" prompt="pntbng_DecimalSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_mwRutA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_nE6WYA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_nE6WYQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_nE6WYg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_File" prompt="daily_gen_File?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/DAILY_GEN_20260127.xlsx" internalId="_nE6WYw1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_nE6WZA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_nE6WZQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_nE6WZg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_nE6WZw1lEfGlZ_5HjPlIug"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="laptop">
+    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training" internalId="_vqlCHw1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_vqlCIA1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_vqlCIQ1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_vqlCIg1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_vqlCIw1ZEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Encoding" prompt="pntbng_Encoding?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_mwRutQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_Header" prompt="pntbng_Header?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRutg1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_ThousandSeparator" prompt="pntbng_ThousandSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_mwRutw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_File" prompt="pntbng_File?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FGHPC_PNTBNG_OCC_20260127.xlsx" internalId="_mwRuuA1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_LastColumn" prompt="pntbng_LastColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_mwRuuQ1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_FirstColumn" prompt="pntbng_FirstColumn?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_mwRuug1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="pntbng_DecimalSeparator" prompt="pntbng_DecimalSeparator?" promptNeeded="false" repositoryContextId="_Zs9CQA1bEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_mwRuuw1bEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_nE6WaA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_nE6WaQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_nE6Wag1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_File" prompt="daily_gen_File?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/resources/DAILY_GEN_20260127.xlsx" internalId="_nE6Waw1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_nE6WbA1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_nE6WbQ1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_nE6Wbg1lEfGlZ_5HjPlIug"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_nE6Wbw1lEfGlZ_5HjPlIug"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:grQb5IIiDQJLhKyNHQU3cByaeCt4dAFEcj4ZCxw+" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Documents/GitHub/FGEN/CPEMS_Automation_Workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ztqi9WPwTT5cnJ3zOi1WEshsuud/hTrb7q8i+nx/" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40" sizeX="80" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:/Documents/GitHub/FGEN/cpems-automation-talend-training&quot;" show="false"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c conda run -p &quot; + context.project_path + &quot;/.cvenv python &quot; + context.project_path + context.webscraper"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_1"/>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputExcel" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputExcel" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kIyH8A1bEfGlZ_5HjPlIug" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.pntbng_File"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ui81c+ptYR6v2O8Onsc5h/RYdYsxUQHdnN6N7RIO"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false">
+      <elementValue elementRef="SHEETNAME" value="&quot;CPEMS_FGHPC_PNTBNG_OCC_20260127&quot;" id="0"/>
+      <elementValue elementRef="USE_REGEX" value="" id="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="context.pntbng_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="context.pntbng_FirstColumn"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="context.pntbng_LastColumn"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kIyH8A1bEfGlZ_5HjPlIug - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_kIyH8A1bEfGlZ_5HjPlIug - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="context.pntbng_ThousandSeparator" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="context.pntbng_DecimalSeparator" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unnamed__0" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classification" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unnamed__0" id="0"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="1"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="3"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="4"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="6"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="7"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classification" id="9"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="10"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="12"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="13"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="15"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="16"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="18"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="19"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="21"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="22"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="24"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="25"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="27"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="28"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="30"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="31"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="33"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="34"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="36"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="37"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="39"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="40"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="42"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="43"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="44"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.pntbng_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_DATE_CELLS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
+    <elementParameter field="TEXT" name="INFLATION_RATIO" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="pntbng"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
+      <column comment="" key="false" length="0" name="Unnamed__0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="0" name="Unnamed__0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unnamed__0" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Classification" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="pantabangan data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+      <column comment="" key="false" length="0" name="Unnamed__0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputExcel" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputExcel" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_cBj9oA1lEfGlZ_5HjPlIug" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_gen_File"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:lvCZ1mb+fIGQbhRZyOunWp33n9/+YXh4/2mxIheF"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false">
+      <elementValue elementRef="SHEETNAME" value="&quot;Daily&quot;" id="0"/>
+      <elementValue elementRef="USE_REGEX" value="" id="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="context.daily_gen_Header"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value="context.daily_gen_Limit"/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="context.daily_gen_FirstColumn"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="context.daily_gen_LastColumn"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_vjSYMA1iEfGlZ_5HjPlIug - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="context.daily_gen_ThousandSeparator" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="context.daily_gen_DecimalSeparator" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_1" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_2" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plant_Total_MWH" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Serv_Used_Total_A_B" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Power_Delivered_MWH" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discharged_cms" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Head_m" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDR_cms" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mas_Gen_MWH1" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tur_Disch_cms" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Service_MWH" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m2" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME" id="0"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="1"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_1" id="3"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="4"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_2" id="6"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="7"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plant_Total_MWH" id="9"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="10"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Serv_Used_Total_A_B" id="12"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="13"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Power_Delivered_MWH" id="15"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="16"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discharged_cms" id="18"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="19"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Head_m" id="21"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="22"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m" id="24"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="25"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDR_cms" id="27"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="28"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mas_Gen_MWH1" id="30"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="31"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tur_Disch_cms" id="33"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="34"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Service_MWH" id="36"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="37"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m2" id="39"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="40"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="41"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.daily_gen_Encoding"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_DATE_CELLS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
+    <elementParameter field="TEXT" name="INFLATION_RATIO" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="daily_gen"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
+      <column comment="" key="false" length="10" name="TIME" nullable="true" pattern="&quot;HHmm&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Plant_Total_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Serv_Used_Total_A_B" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Total_Power_Delivered_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Discharged_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Head_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IDR_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Mas_Gen_MWH1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Tur_Disch_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Service_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="10" name="TIME" nullable="true" pattern="&quot;HHmm&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Plant_Total_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Serv_Used_Total_A_B" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Total_Power_Delivered_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Discharged_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Head_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IDR_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Mas_Gen_MWH1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Tur_Disch_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Service_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_1" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hourly_Generated_UNIT_2" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plant_Total_MWH" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Serv_Used_Total_A_B" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Power_Delivered_MWH" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discharged_cms" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Head_m" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDR_cms" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mas_Gen_MWH1" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tur_Disch_cms" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stn_Service_MWH" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Elevation_m2" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="daily gen data"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="10" name="TIME" nullable="true" pattern="&quot;HHmm&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Hourly_Generated_UNIT_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Plant_Total_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Serv_Used_Total_A_B" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Total_Power_Delivered_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Discharged_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Head_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="IDR_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Mas_Gen_MWH1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Tur_Disch_cms" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Stn_Service_MWH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Elevation_m2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <note opaque="true" posX="1240" posY="40" sizeHeight="41" sizeWidth="481" text="Note: Trading_Hour format is different in pantabangan and casecnan .xlsx file">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <note opaque="false" posX="1240" posY="120" sizeHeight="81" sizeWidth="441" text="Question: Is pantabangan excel file download from the same&#xD;&#xA;Energy > Transactions > OCC page in CPEMS">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="run webscraper"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+</talendfile:ProcessType>
