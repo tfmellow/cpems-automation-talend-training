@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:FileExcelConnection xmi:id="_kIyH8Q1bEfGlZ_5HjPlIug" name="pntbng" dataPackage="_kIyH8g1bEfGlZ_5HjPlIug" ContextMode="true" ContextId="_Zs9CQA1bEfGlZ_5HjPlIug" contextName="desktop" Server="Localhost 127.0.0.1" FilePath="context.pntbng_File" Encoding="context.pntbng_Encoding" UseHeader="true" HeaderValue="context.pntbng_Header" FirstLineCaption="true" SheetName="CPEMS_FGHPC_PNTBNG_OCC_20260127" firstColumn="context.pntbng_FirstColumn" lastColumn="context.pntbng_LastColumn" thousandSeparator="context.pntbng_ThousandSeparator" decimalSeparator="context.pntbng_DecimalSeparator" selectAllSheets="true" sheetList="CPEMS_FGHPC_PNTBNG_OCC_20260127:w&#xA;">
+  <TalendMetadata:FileExcelConnection xmi:id="_kIyH8Q1bEfGlZ_5HjPlIug" name="pntbng" id="_kIyH8A1bEfGlZ_5HjPlIug" dataPackage="_kIyH8g1bEfGlZ_5HjPlIug" ContextMode="true" ContextId="_Zs9CQA1bEfGlZ_5HjPlIug" contextName="desktop" Server="Localhost 127.0.0.1" FilePath="context.pntbng_File" Encoding="context.pntbng_Encoding" UseHeader="true" HeaderValue="context.pntbng_Header" FirstLineCaption="true" SheetName="CPEMS_FGHPC_PNTBNG_OCC_20260127" firstColumn="context.pntbng_FirstColumn" lastColumn="context.pntbng_LastColumn" thousandSeparator="context.pntbng_ThousandSeparator" decimalSeparator="context.pntbng_DecimalSeparator" selectAllSheets="true" sheetList="CPEMS_FGHPC_PNTBNG_OCC_20260127:w&#xA;">
     <sheetColumns>A</sheetColumns>
     <sheetColumns>B</sheetColumns>
     <sheetColumns>C</sheetColumns>
@@ -32,7 +32,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyH_g1bEfGlZ_5HjPlIug" label="Brief_Description" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyH_w1bEfGlZ_5HjPlIug" label="File" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyIAA1bEfGlZ_5HjPlIug" label="Status" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyIAQ1bEfGlZ_5HjPlIug" label="Registered_Capacity" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyIAQ1bEfGlZ_5HjPlIug" label="Registered_Capacity" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kIyIAg1bEfGlZ_5HjPlIug" label="Offered_Capacity" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
