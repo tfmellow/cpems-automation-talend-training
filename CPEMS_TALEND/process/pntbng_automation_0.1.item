@@ -1159,7 +1159,7 @@
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="Resource_ID" id="0"/>
       <elementValue elementRef="SORT" value="alpha" id="1"/>
-      <elementValue elementRef="ORDER" value="desc" id="2"/>
+      <elementValue elementRef="ORDER" value="asc" id="2"/>
       <elementValue elementRef="COLNAME" value="Trading_Hour" id="3"/>
       <elementValue elementRef="SORT" value="alpha" id="4"/>
       <elementValue elementRef="ORDER" value="asc" id="5"/>
@@ -1865,6 +1865,40 @@
       <column comment="" key="false" length="2" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1080">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_2" show="false"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="Resource_ID" id="0"/>
+      <elementValue elementRef="SORT" value="alpha" id="1"/>
+      <elementValue elementRef="ORDER" value="asc" id="2"/>
+      <elementValue elementRef="COLNAME" value="Trading_Hour" id="3"/>
+      <elementValue elementRef="SORT" value="alpha" id="4"/>
+      <elementValue elementRef="ORDER" value="asc" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training/temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSortRow_2">
+      <column comment="" key="false" length="8" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="IDR" nullable="true" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="18" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="880">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
@@ -2302,7 +2336,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_6">
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tSortRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="IDR" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
@@ -2322,6 +2356,10 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tSortRow_2" offsetLabelX="0" offsetLabelY="0" source="tSortRow_2" target="tLogRow_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tReplicate_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
