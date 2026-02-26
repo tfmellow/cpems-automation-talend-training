@@ -797,7 +797,7 @@
       <column comment="" key="false" length="2" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Id" expression="occ.Id " type="id_Integer" nullable="true"/>
@@ -850,7 +850,7 @@
         <mapperTableEntries name="Stn_Service_MWH" type="id_Float" nullable="true"/>
         <mapperTableEntries name="Elevation_m2" type="id_Float" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="outage" expressionFilter="(outage.PLANT != null &amp;&amp; occ.Trading_Hour.after(outage.START_INTERVAL) &amp;&amp; (outage.END_INTERVAL == null || occ.Trading_Hour.before(outage.END_INTERVAL) || occ.Trading_Hour.equals(outage.END_INTERVAL)))" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="outage" expressionFilter="(outage.PLANT != null &amp;&amp; occ.Trading_Hour.after(outage.START_INTERVAL) &amp;&amp; (outage.END_INTERVAL == null || outage.END_INTERVAL.after(TalendDate.addDate(occ.Trading_Hour, -1, &quot;HH&quot;)))&#xD;&#xA;)" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="STATUS" type="id_String" nullable="true"/>
         <mapperTableEntries name="PLANT" expression="occ.Resource_ID " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="START_INTERVAL" type="id_Date" nullable="true"/>
