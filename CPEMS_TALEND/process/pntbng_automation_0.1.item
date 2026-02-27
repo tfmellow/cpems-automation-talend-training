@@ -568,7 +568,7 @@
       <column comment="" key="false" length="2" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Id" expression="occ.Id " type="id_Integer" nullable="true"/>
@@ -577,11 +577,11 @@
         <mapperTableEntries name="Trading_Hour" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm&quot;,occ.Trading_Hour) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Probable_Breach_Flag" expression="occ.Probable_Breach_Flag " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Violation_Type" expression="occ.Violation_Type " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Reasons" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reasons" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_From" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? (TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(occ.Trading_Hour, -1, &quot;dd&quot;)) + &quot; 01:00&quot;) : (TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 01:00&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_To" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 00:00&quot; : TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(occ.Trading_Hour, 1, &quot;dd&quot;)) + &quot; 00:00&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Brief_Description" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Attachments" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Brief_Description" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Attachments" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="occ.Status " type="id_String" nullable="true"/>
         <mapperTableEntries name="Registered_Capacity" expression="occ.Registered_Capacity " type="id_Float" nullable="true"/>
         <mapperTableEntries name="Offered_Capacity" expression="occ.Offered_Capacity " type="id_Float" nullable="true"/>
@@ -1446,7 +1446,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE OCC_DATA &#xD;&#xA;SET &#xD;&#xA;    REASONS = '&quot; + (String)globalMap.get(&quot;current_reason&quot;) + &quot;', &#xD;&#xA;    BRIEF_DESCRIPTION = '&quot; + (String)globalMap.get(&quot;current_desc&quot;) + &quot;',&#xD;&#xA;    ATTACHMENTS = '&quot; + (String)globalMap.get(&quot;current_attach&quot;) + &quot;'&#xD;&#xA;WHERE REASONS IS NULL &#xD;&#xA;  AND RESOURCE_ID IN ('&quot; + ((String)globalMap.get(&quot;current_resource_id&quot;)).replaceAll(&quot;\\s&quot;, &quot;&quot;).replace(&quot;,&quot;, &quot;','&quot;) + &quot;') &#xD;&#xA;  AND (&quot; + (String)globalMap.get(&quot;current_logic&quot;) + &quot;)&quot;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;UPDATE OCC_DATA &#xD;&#xA;SET &#xD;&#xA;    REASONS = '&quot; + (String)globalMap.get(&quot;current_reason&quot;) + &quot;', &#xD;&#xA;    BRIEF_DESCRIPTION = '&quot; + (String)globalMap.get(&quot;current_desc&quot;) + &quot;',&#xD;&#xA;    ATTACHMENTS = '&quot; + (String)globalMap.get(&quot;current_attach&quot;) + &quot;'&#xD;&#xA;WHERE REASONS = 'NA' &#xD;&#xA;  AND RESOURCE_ID IN ('&quot; + ((String)globalMap.get(&quot;current_resource_id&quot;)).replaceAll(&quot;\\s&quot;, &quot;&quot;).replace(&quot;,&quot;, &quot;','&quot;) + &quot;') &#xD;&#xA;  AND (&quot; + (String)globalMap.get(&quot;current_logic&quot;) + &quot;)&quot;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
@@ -1508,7 +1508,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  Id, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Resource_ID, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Classification, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Trading_Hour,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Probable_Breach_Flag, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Violation_Type, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Reasons, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Date_From, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Date_To, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Brief_Description, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Attachments, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Status, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Registered_Capacity, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Offered_Capacity &#xD;&#xA;from occ_data&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  Id, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Resource_ID, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Classification, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Trading_Hour,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Probable_Breach_Flag, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Violation_Type, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Reasons, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Date_From, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Date_To, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Brief_Description, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Attachments AS File, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Status, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Registered_Capacity, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Offered_Capacity &#xD;&#xA;from occ_data&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
@@ -1532,7 +1532,7 @@
       <elementValue elementRef="TRIM" value="false" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="20"/>
       <elementValue elementRef="TRIM" value="false" id="21"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
       <elementValue elementRef="TRIM" value="false" id="23"/>
@@ -1553,7 +1553,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1585,7 +1585,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1625,7 +1625,7 @@
       <elementValue elementRef="LENGTH" value="10" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
       <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="20"/>
       <elementValue elementRef="LENGTH" value="10" id="21"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
       <elementValue elementRef="LENGTH" value="10" id="23"/>
@@ -1649,7 +1649,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1669,7 +1669,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1712,7 +1712,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false" id="17"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attachments" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="20"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false" id="21"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false" id="23"/>
@@ -1750,7 +1750,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1798,7 +1798,7 @@
       <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Attachments" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1994,7 +1994,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="File" id="6"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Attachments" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN" value="File" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
     </elementParameter>
