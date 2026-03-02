@@ -5,7 +5,7 @@
     <contextParameter xmi:id="_TTsMsgvzEfGDE9mEXJOxBg" comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="','"/>
     <contextParameter xmi:id="_TTsMswvzEfGDE9mEXJOxBg" comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
     <contextParameter xmi:id="_TTsMtAvzEfGDE9mEXJOxBg" comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2"/>
-    <contextParameter xmi:id="_TTsMtQvzEfGDE9mEXJOxBg" comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
+    <contextParameter xmi:id="_TTsMtQvzEfGDE9mEXJOxBg" comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_TTsMtgvzEfGDE9mEXJOxBg" comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="'.'"/>
     <contextParameter xmi:id="_TTsMtwvzEfGDE9mEXJOxBg" comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8"/>
   </talendfile:ContextType>
@@ -14,7 +14,7 @@
     <contextParameter xmi:id="_TTsMugvzEfGDE9mEXJOxBg" comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="','"/>
     <contextParameter xmi:id="_TTsMuwvzEfGDE9mEXJOxBg" comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
     <contextParameter xmi:id="_TTsMvAvzEfGDE9mEXJOxBg" comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2"/>
-    <contextParameter xmi:id="_TTsMvQvzEfGDE9mEXJOxBg" comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
+    <contextParameter xmi:id="_TTsMvQvzEfGDE9mEXJOxBg" comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx"/>
     <contextParameter xmi:id="_TTsMvgvzEfGDE9mEXJOxBg" comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="'.'"/>
     <contextParameter xmi:id="_TTsMvwvzEfGDE9mEXJOxBg" comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UTF-8"/>
   </talendfile:ContextType>
