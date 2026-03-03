@@ -143,7 +143,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:grQb5IIiDQJLhKyNHQU3cByaeCt4dAFEcj4ZCxw+" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Wz5Uo3aRpCPfYM0h8Q4ARL5uR4zxteVwOlE89MdN" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -158,7 +158,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Documents/GitHub/FGEN/CPEMS_Automation_Workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/gprgonzalez/Documents/GitHub/FGEN/cpems-automation-talend-training/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -178,7 +178,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ztqi9WPwTT5cnJ3zOi1WEshsuud/hTrb7q8i+nx/" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:K73Ezu18KAiljqB+NVm2eFs5GN81b7y7W3PYEMlZ" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -313,7 +313,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="920">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;current_logic&quot;, input_row.COMPLIANCE_LOGIC);&#xD;&#xA;globalMap.put(&quot;current_reason&quot;, input_row.REASONS);&#xD;&#xA;globalMap.put(&quot;current_desc&quot;, input_row.BRIEF_DESCRIPTION);&#xD;&#xA;globalMap.put(&quot;current_attach&quot;, input_row.ATTACHMENTS);&#xD;&#xA;&#xD;&#xA;output_row.PLANT_ENTITY = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.RESOURCE_ID = input_row.RESOURCE_ID;&#xD;&#xA;output_row.COMPLIANCE_TYPE = input_row.COMPLIANCE_TYPE;&#xD;&#xA;output_row.LOGIC_PRIORITY = input_row.LOGIC_PRIORITY;&#xD;&#xA;output_row.COMPLIANCE_LOGIC = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;output_row.ENTRY_TAG = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.REASONS = input_row.REASONS;&#xD;&#xA;output_row.BRIEF_DESCRIPTION = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;output_row.ATTACHMENTS = input_row.ATTACHMENTS;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;current_logic&quot;, input_row.COMPLIANCE_LOGIC);&#xD;&#xA;globalMap.put(&quot;current_reason&quot;, input_row.REASONS);&#xD;&#xA;globalMap.put(&quot;current_desc&quot;, input_row.BRIEF_DESCRIPTION);&#xD;&#xA;globalMap.put(&quot;current_attach&quot;, input_row.ATTACHMENTS);&#xD;&#xA;globalMap.put(&quot;current_resource_id&quot;, input_row.RESOURCE_ID);&#xD;&#xA;&#xD;&#xA;output_row.PLANT_ENTITY = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.RESOURCE_ID = input_row.RESOURCE_ID;&#xD;&#xA;output_row.COMPLIANCE_TYPE = input_row.COMPLIANCE_TYPE;&#xD;&#xA;output_row.LOGIC_PRIORITY = input_row.LOGIC_PRIORITY;&#xD;&#xA;output_row.COMPLIANCE_LOGIC = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;output_row.ENTRY_TAG = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.REASONS = input_row.REASONS;&#xD;&#xA;output_row.BRIEF_DESCRIPTION = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;output_row.ATTACHMENTS = input_row.ATTACHMENTS;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -973,8 +973,8 @@
         <mapperTableEntries name="Probable_Breach_Flag" expression="occ.Probable_Breach_Flag " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Violation_Type" expression="occ.Violation_Type " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Reasons" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_From" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? (TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(occ.Trading_Hour, -1, &quot;dd&quot;)) + &quot; 01:00&quot;) : (TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 01:00&quot;) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_To" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, occ.Trading_Hour) + &quot; 00:00&quot; : TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, TalendDate.addDate(occ.Trading_Hour, 1, &quot;dd&quot;)) + &quot; 00:00&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_From" expression="TalendDate.formatDate(&quot;HH:mm&quot;,occ.Trading_Hour).equals(&quot;00:00&quot;) ? (TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, TalendDate.addDate(occ.Trading_Hour, -1, &quot;dd&quot;)) + &quot; 01:00 AM&quot;) : (TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, occ.Trading_Hour) + &quot; 01:00 AM&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_To" expression="TalendDate.formatDate(&quot;HH:mm&quot;, occ.Trading_Hour).equals(&quot;00:00&quot;) ? (TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, occ.Trading_Hour) + &quot; 12:00 AM&quot;) : (TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, TalendDate.addDate(occ.Trading_Hour, 1, &quot;dd&quot;)) + &quot; 12:00 AM&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Brief_Description" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Attachments" expression="&quot;NA&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="occ.Status " type="id_String" nullable="true"/>
