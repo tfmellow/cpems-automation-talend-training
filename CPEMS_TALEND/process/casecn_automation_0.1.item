@@ -1,94 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="current" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="current">
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_92c94QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_92c94gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training" internalId="_92c94wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_92c95AyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_92c95QyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="'.'" internalId="_92c95gyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="UTF-8" internalId="_92c95wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_File" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_92c96AyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="1" internalId="_92c96QyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="2" internalId="_92c96gyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_LastColumn" prompt="casecn_LastColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="" internalId="_92c96wyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="','" internalId="_92c97AyIEfGnbbCqf7Zb1g"/>
     <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghQAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_File" prompt="fgen_plant_outage_csv_File?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/resources/FGEN_Plant_Outage_20260125.csv" internalId="_C7ghQQyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghQgyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghQwyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_File" prompt="chepp_capability_csv_File?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv" internalId="_C7ghRQyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRgyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghRwyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghSAyLEfGi3_Qa9l5WMw"/>
     <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghSQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_svTC8BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC8RitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC8hitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources" internalId="_svTC8xitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input" internalId="_svTC9BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output" internalId="_svTC9RitEfGDN455kB21Bw"/>
-  </context>
-  <context confirmationNeeded="false" hide="false" name="desktop">
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_92c94QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_92c94gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training" internalId="_92c94wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_92c95AyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_92c95QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="'.'" internalId="_92c95gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="UTF-8" internalId="_92c95wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_92c96AyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="1" internalId="_92c96QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="2" internalId="_92c96gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_LastColumn" prompt="casecn_LastColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="" internalId="_92c96wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="','" internalId="_92c97AyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghQAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_File" prompt="fgen_plant_outage_csv_File?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/resources/FGEN_Plant_Outage_20260125.csv" internalId="_C7ghQQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghQgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghQwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_File" prompt="chepp_capability_csv_File?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/Git/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv" internalId="_C7ghRQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghRwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghSAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghSQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC9hitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC9xitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC-BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC-RitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC-hitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC-xitEfGDN455kB21Bw"/>
-  </context>
-  <context confirmationNeeded="false" hide="false" name="laptop">
-    <contextParameter comment="" name="input" prompt="input?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_input" internalId="_92c-CAyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="output" prompt="output?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/talend_output" internalId="_92c-CQyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="project_path" prompt="project_path?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training" internalId="_92c-CgyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="resources" prompt="resources?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/resources" internalId="_92c-CwyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_92c-DAyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="'.'" internalId="_92c-DQyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="UTF-8" internalId="_92c-DgyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_File" prompt="casecn_File?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_File" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/talend_input/CPEMS_FRLC_CASECN_OCC_20260125.xlsx" internalId="_92c-DwyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="1" internalId="_92c-EAyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="2" internalId="_92c-EQyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_LastColumn" prompt="casecn_LastColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="" internalId="_92c-EgyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="','" internalId="_92c-EwyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghXgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_File" prompt="fgen_plant_outage_csv_File?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/resources/FGEN_Plant_Outage_20260125.csv" internalId="_C7ghXwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghYAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghYQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghYgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_File" prompt="chepp_capability_csv_File?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_File" value="D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/resources/CHEPP_Capability_20260125.csv" internalId="_C7ghYwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghZAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghZQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghZgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghZwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC_BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC_RitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC_hitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTC_xitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTDABitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_svTDARitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_svTC8BitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_svTC8RitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_svTC8hitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources" internalId="_svTC8xitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input" internalId="_svTC9BitEfGDN455kB21Bw"/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output" internalId="_svTC9RitEfGDN455kB21Bw"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -457,16 +390,6 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="1640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_3" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputExcel" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputExcel" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.occ_dir + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.xlsx&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:P5n2gFmZwJ5UZIjp1lmnZb9R6jeommtgL5QArE7B"/>
@@ -1038,7 +961,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value=" context.resources_dir"/>
+    <elementParameter field="FILE" name="FILENAME" value=" context.resources_dir + &quot;/CHEPP_Capability_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.chepp_capability_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1939,7 +1862,7 @@
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:GFN3PwmiQD0c1KSN4MvKSQp0zZw4gVsgQprY6Z1/fMoi/jeMHwU=" show="false"/>
     <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" value="JKS"/>
-    <elementParameter field="FILE" name="SSL_KEYSTORE" value="&quot;D:/TALEND_INTEG/talend_integ.jks&quot;"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" value="&quot;D:/gprgonzalez/keystores/TALEND_INTEG/talend_integ.jks&quot;"/>
     <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:TBFBkXRl99UjPySA8091ptE+0ba9nxONG2U97cpyW+D8y6TmVZriKDLt"/>
     <elementParameter field="CHECK" name="VERIFY_NAME" value="true"/>
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
@@ -1970,20 +1893,8 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputExcel" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputExcel" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_gLY34AvzEfGDE9mEXJOxBg" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.casecn_File"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.occ_dir + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.xlsx&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:6c5XyW2QTqOSRaP2Lo8GdJ7gHh84Znqbz0s7K448"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
@@ -2457,7 +2368,10 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_3" offsetLabelX="50" offsetLabelY="0" source="tDBRow_3" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tSystem_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBConnection_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBConnection_1" target="tSystem_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
@@ -2650,12 +2564,6 @@
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
-  <note opaque="false" posX="2520" posY="240" sizeHeight="40" sizeWidth="521" text="TODO: Code to automatically find specific OCC file for the day (or specific day)">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
   <note opaque="true" posX="2520" posY="480" sizeHeight="81" sizeWidth="561" text="Improvements:&#xD;&#xA;- Check data types for efficiency &#xD;&#xA;- Should output have the extra column like the original CPEMS file&#xD;&#xA;- Automate the creation of the tables in Snowflake">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
@@ -2663,6 +2571,13 @@
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
   <note opaque="true" posX="2520" posY="320" sizeHeight="121" sizeWidth="521" text="Hurdles:&#xD;&#xA;- Insert value list does not match column list expecting 17 but got 13&#xD;&#xA;&#x9;- found fix: guess schema and do no change anything&#xD;&#xA;&#xD;&#xA;- tFlowToIterate could not connect to tSnowflakeRow&#xD;&#xA;&#x9;- found fix: manual iteration">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <note opaque="true" posX="1240" posY="40" sizeHeight="81" sizeWidth="401" text="TODO: Logic for getting the CHEPP file">
+    <elementParameter field="COLOR" name="NOTETXT_COLOR" value="227;164;156"/>
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
