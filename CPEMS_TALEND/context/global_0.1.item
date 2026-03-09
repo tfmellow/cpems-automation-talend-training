@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_RwkQcAJYEfGtd7uBl15eqg" confirmationNeeded="false" hide="false" name="desktop">
-    <contextParameter xmi:id="_5DJzUAKKEfGYU9RPx5hVKA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_Rr3m4BlzEfGCYMish44X7w" comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily"/>
-    <contextParameter xmi:id="_S2FXQBlzEfGCYMish44X7w" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_VlXA8BlzEfGCYMish44X7w" comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input"/>
-    <contextParameter xmi:id="_Wp5nIBlzEfGCYMish44X7w" comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources"/>
-    <contextParameter xmi:id="_XdwF8BlzEfGCYMish44X7w" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_YSfVkBlzEfGCYMish44X7w" comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output"/>
-  </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_G73zMAMmEfGFjLgpKyJdZw" confirmationNeeded="false" hide="false" name="laptop">
-    <contextParameter xmi:id="_G73zNAMmEfGFjLgpKyJdZw" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_Rr3m4RlzEfGCYMish44X7w" comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_S2FXQRlzEfGCYMish44X7w" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_VlXA8RlzEfGCYMish44X7w" comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_Wp5nIRlzEfGCYMish44X7w" comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_XdwF8RlzEfGCYMish44X7w" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_YSfVkRlzEfGCYMish44X7w" comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_DF8bkAV4EfGFwuioJQ2HhA" confirmationNeeded="false" hide="false" name="d_desktop">
-    <contextParameter xmi:id="_DF8blAV4EfGFwuioJQ2HhA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_Rr3m4hlzEfGCYMish44X7w" comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily"/>
-    <contextParameter xmi:id="_S2FXQhlzEfGCYMish44X7w" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_VlXA8hlzEfGCYMish44X7w" comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input"/>
-    <contextParameter xmi:id="_Wp5nIhlzEfGCYMish44X7w" comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources"/>
-    <contextParameter xmi:id="_XdwF8hlzEfGCYMish44X7w" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_YSfVkhlzEfGCYMish44X7w" comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output"/>
-  </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_DF8blgV4EfGFwuioJQ2HhA" confirmationNeeded="false" hide="false" name="d_laptop">
-    <contextParameter xmi:id="_DF8bmgV4EfGFwuioJQ2HhA" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
-    <contextParameter xmi:id="_Rr3m4xlzEfGCYMish44X7w" comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily"/>
-    <contextParameter xmi:id="_S2FXQxlzEfGCYMish44X7w" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_VlXA8xlzEfGCYMish44X7w" comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input"/>
-    <contextParameter xmi:id="_Wp5nIxlzEfGCYMish44X7w" comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources"/>
-    <contextParameter xmi:id="_XdwF8xlzEfGCYMish44X7w" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter xmi:id="_YSfVkxlzEfGCYMish44X7w" comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output"/>
-  </talendfile:ContextType>
-</xmi:XMI>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_W0RyIBuXEfGkJpnyqNW_2A" confirmationNeeded="false" hide="false" name="dev">
+  <contextParameter xmi:id="_W0RyIRuXEfGkJpnyqNW_2A" comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/code/cpems_webscraper.py"/>
+  <contextParameter xmi:id="_W0RyIhuXEfGkJpnyqNW_2A" comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily"/>
+  <contextParameter xmi:id="_W0RyIxuXEfGkJpnyqNW_2A" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_W0RyJBuXEfGkJpnyqNW_2A" comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input"/>
+  <contextParameter xmi:id="_W0RyJRuXEfGkJpnyqNW_2A" comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources"/>
+  <contextParameter xmi:id="_W0RyJhuXEfGkJpnyqNW_2A" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_W0RyJxuXEfGkJpnyqNW_2A" comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output"/>
+</talendfile:ContextType>
