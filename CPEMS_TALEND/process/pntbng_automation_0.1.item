@@ -1028,7 +1028,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.occ_dir + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
@@ -1236,7 +1236,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.occ_dir + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
@@ -2175,13 +2175,6 @@
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
-  <note opaque="true" posX="840" posY="40" sizeHeight="121" sizeWidth="601" text="NOTE&#xD;&#xA;&#xD;&#xA;OCC file is still manually saved to:&#xD;&#xA;I:\My Drive\2025_DAM\01_Projects\14_WESM_Compliance_Automation\01_Working\GRG&#xD;&#xA;as excel file as only CSV file versions are provided in trading folder">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
   </note>
   <note opaque="true" posX="1600" posY="240" sizeHeight="40" sizeWidth="200" text="TODO: Add logging">
     <elementParameter field="COLOR" name="NOTETXT_COLOR" value="227;164;156"/>
