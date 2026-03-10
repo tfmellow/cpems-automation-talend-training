@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="dev">
-    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_92c95QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_DecimalSeparator" prompt="casecn_DecimalSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="'.'" internalId="_92c95gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Encoding" prompt="casecn_Encoding?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="UTF-8" internalId="_92c95wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_FirstColumn" prompt="casecn_FirstColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="1" internalId="_92c96QyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_Header" prompt="casecn_Header?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="2" internalId="_92c96gyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_LastColumn" prompt="casecn_LastColumn?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_Integer" value="" internalId="_92c96wyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="casecn_ThousandSeparator" prompt="casecn_ThousandSeparator?" promptNeeded="false" repositoryContextId="_TTh0oAvzEfGDE9mEXJOxBg" type="id_String" value="','" internalId="_92c97AyIEfGnbbCqf7Zb1g"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghQAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghQgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghQwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_C7ghRgyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_C7ghRwyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_C7ghSAyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_C7ghSQyLEfGi3_Qa9l5WMw"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_svTC8BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_svTC8RitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_svTC8hitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources" internalId="_svTC8xitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input" internalId="_svTC9BitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output" internalId="_svTC9RitEfGDN455kB21Bw"/>
-    <contextParameter comment="" name="occ_Header" prompt="occ_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_x4TSwBuPEfGkJpnyqNW_2A"/>
-    <contextParameter comment="" name="occ_RowSeparator" prompt="occ_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_x4TSwRuPEfGkJpnyqNW_2A"/>
-    <contextParameter comment="" name="occ_FieldSeparator" prompt="occ_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_x4TSwhuPEfGkJpnyqNW_2A"/>
-    <contextParameter comment="" name="occ_Encoding" prompt="occ_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_x4TSwxuPEfGkJpnyqNW_2A"/>
+    <contextParameter comment="" name="chepp_capability_csv_Encoding" prompt="chepp_capability_csv_Encoding?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_H3BBABw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_H3BBARw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_H3BBAhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_H3BBAxw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_H3BBBBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_H3BBBRw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_H3BBBhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_H3BBBxw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_H3BBCBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_H3BBCRw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_H3BBChw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_H3BBCxw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_H3BBDBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_H3BBDRw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_H3BBDhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_H3BBDxw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input" internalId="_H3BBEBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output" internalId="_H3BBERw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_H3BBEhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources" internalId="_H3BBExw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_H3BBFBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_H3BBFRw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_H3BBFhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="occ_Encoding" prompt="occ_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_H3BoEBw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="occ_FieldSeparator" prompt="occ_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_H3BoERw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="occ_Header" prompt="occ_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_H3BoEhw5EfGgMu8yrBSclg"/>
+    <contextParameter comment="" name="occ_RowSeparator" prompt="occ_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_H3BoExw5EfGgMu8yrBSclg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -801,7 +803,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280" sizeX="161" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//get d-1&#xD;&#xA;java.util.Date yesterday = TalendDate.addDate(new java.util.Date(), -1, &quot;dd&quot;);&#xD;&#xA;&#xD;&#xA;String folderName = TalendDate.formatDate(&quot;yyyyMMdd&quot;, yesterday);&#xD;&#xA;&#xD;&#xA;context.target_date_dir = &quot;/&quot; + folderName;&#xD;&#xA;context.target_date = folderName;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;Processing Folder: &quot; + context.target_date);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//get d-1 directory&#xD;&#xA;&#xD;&#xA;String InputDate = ((String)globalMap.get(&quot;InputDate&quot;));&#xD;&#xA;context.target_date_dir = &quot;/&quot; + InputDate;&#xD;&#xA;context.target_date = InputDate;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;Processing Folder: &quot; + context.target_date);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
@@ -2202,6 +2204,22 @@
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
+  <node componentName="Set_Date_Daily" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Set_Date_Daily_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set_Date_Daily"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
   <connection connectorName="FLOW" label="input_row" lineStyle="0" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="input_row" show="false"/>
@@ -2245,6 +2263,9 @@
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_3" offsetLabelX="50" offsetLabelY="0" source="tDBRow_3" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="Set_Date_Daily_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBClose_1" offsetLabelX="0" offsetLabelY="0" source="tDBClose_1" target="tSetKeystore_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
@@ -2338,14 +2359,14 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tJava_3">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tFileInputDelimited_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tFixedFlowInput_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFixedFlowInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tFileInputDelimited_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHashOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2569,6 +2590,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetKeystore_2" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="clear keystore"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Set_Date_Daily_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
 </talendfile:ProcessType>
