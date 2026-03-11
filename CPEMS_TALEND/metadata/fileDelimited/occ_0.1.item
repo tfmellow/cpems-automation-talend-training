@@ -11,8 +11,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXCBuPEfGkJpnyqNW_2A" name="Probable_Breach_Flag" label="Probable_Breach_Flag" length="25" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXCRuPEfGkJpnyqNW_2A" name="Violation_Type" label="Violation_Type" length="25" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXChuPEfGkJpnyqNW_2A" name="Reasons" label="Reasons" length="2000" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXCxuPEfGkJpnyqNW_2A" name="Date_From" label="Date_From" length="25" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXDBuPEfGkJpnyqNW_2A" name="Date_To" label="Date_To" length="25" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXCxuPEfGkJpnyqNW_2A" name="Date_From" label="Date_From" length="25" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXDBuPEfGkJpnyqNW_2A" name="Date_To" label="Date_To" length="25" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXDRuPEfGkJpnyqNW_2A" name="Brief_Description" label="Brief_Description" length="2000" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXDhuPEfGkJpnyqNW_2A" name="File" label="File" length="2000" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c6yXDxuPEfGkJpnyqNW_2A" name="Status" label="Status" length="25" talendType="id_String"/>
