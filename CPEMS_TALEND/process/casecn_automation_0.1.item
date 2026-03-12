@@ -24,10 +24,10 @@
     <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ckiB5BxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ckiB5RxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="webscraper" prompt="webscraper?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="/code/cpems_webscraper.py" internalId="_ckiB5hxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_Encoding" prompt="occ_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_ckiB5xxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_FieldSeparator" prompt="occ_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_ckiB6BxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_Header" prompt="occ_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_ckiB6RxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_RowSeparator" prompt="occ_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_ckiB6hxNEfGlT6zRgOuOoA"/>
+    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_FXAR4B4nEfGc9aq8hvnGzw"/>
+    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_FXAR4R4nEfGc9aq8hvnGzw"/>
+    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_FXAR4h4nEfGc9aq8hvnGzw"/>
+    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_FXAR4x4nEfGc9aq8hvnGzw"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -1035,12 +1035,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.occ_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.occ_csv_Header"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -1089,7 +1089,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -1263,6 +1263,16 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="920">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_c6vTsBuPEfGkJpnyqNW_2A - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
@@ -1270,12 +1280,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_FieldSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_csv_RowSeparator" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.occ_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.occ_csv_Header"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -1324,7 +1334,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -1561,12 +1571,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.occ_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.occ_csv_Header"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -1615,7 +1625,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -2220,7 +2230,7 @@
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;D:/gprgonzalez/Git/FGEN/cpems-automation-talend-training/in.hash&quot;" show="false"/>
     <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>plant_outage"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>fgen_plant_outage"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
       <column comment="" key="false" length="16" name="STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -2268,9 +2278,9 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -2322,7 +2332,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -2361,7 +2371,7 @@
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="occ"/>
+    <elementParameter field="TEXT" name="LABEL" value="CASECN_OCC"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_4">
       <column comment="" key="false" length="2000" name="Unnamed" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2933,31 +2943,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
   </connection>
-  <note opaque="false" posX="1240" posY="440" sizeHeight="161" sizeWidth="881" text="TODO:&#xD;&#xA;fix logic for getting Seasonal_Maximum_Capability&#xD;&#xA;- results in null when my occ.Trading_Hour is 1/26/2026  00:00:00&#xD;&#xA;- fixed, checked the Date for CHEPP capability to also consider days that have 0 as 'H'&#xD;&#xA;&#xD;&#xA;used:&#xD;&#xA;Integer.parseInt(TalendDate.formatDate(&quot;H&quot;, occ.Trading_Hour)) == 0 ? 24 : Integer.parseInt(TalendDate.formatDate(&quot;H&quot;, occ.Trading_Hour))&#xD;&#xA;TalendDate.getPartOfDate(&quot;HOUR_OF_DAY&quot;, occ.Trading_Hour) ==  0 ? 24 : TalendDate.getPartOfDate(&quot;HOUR_OF_DAY&quot;, occ.Trading_Hour)&#xD;&#xA;Integer.parseInt(TalendDate.formatDate(&quot;HH&quot;, occ.Trading_Hour)) == 0 ? 24 : Integer.parseInt(TalendDate.formatDate(&quot;HH&quot;, occ.Trading_Hour))">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
-  <note opaque="true" posX="1240" posY="320" sizeHeight="81" sizeWidth="561" text="Improvements:&#xD;&#xA;- Check data types for efficiency &#xD;&#xA;- Should output have the extra column like the original CPEMS file&#xD;&#xA;- Automate the creation of the tables in Snowflake">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
-  <note opaque="true" posX="1240" posY="160" sizeHeight="121" sizeWidth="521" text="Hurdles:&#xD;&#xA;- Insert value list does not match column list expecting 17 but got 13&#xD;&#xA;&#x9;- found fix: guess schema and do no change anything&#xD;&#xA;&#xD;&#xA;- tFlowToIterate could not connect to tSnowflakeRow&#xD;&#xA;&#x9;- found fix: manual iteration">
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
-  <note opaque="true" posX="1240" posY="40" sizeHeight="81" sizeWidth="401" text="TODO: Logic for getting the CHEPP file">
-    <elementParameter field="COLOR" name="NOTETXT_COLOR" value="227;164;156"/>
-    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
-    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
-    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
-  </note>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_1" show="false"/>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Lvng8BuOEfGkJpnyqNW_2A" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_Lvng8RuOEfGkJpnyqNW_2A" comment="" name="occ_FieldSeparator" prompt="occ_FieldSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;,&quot;"/>
-  <contextParameter xmi:id="_Lvng8huOEfGkJpnyqNW_2A" comment="" name="occ_RowSeparator" prompt="occ_RowSeparator?" promptNeeded="false" repositoryContextId="" type="id_String" value="&quot;\n&quot;"/>
-  <contextParameter xmi:id="_Lvng8xuOEfGkJpnyqNW_2A" comment="" name="occ_Encoding" prompt="occ_Encoding?" promptNeeded="false" repositoryContextId="" type="id_String" value="US-ASCII"/>
-  <contextParameter xmi:id="_Lvng9BuOEfGkJpnyqNW_2A" comment="" name="occ_Header" prompt="occ_Header?" promptNeeded="false" repositoryContextId="" type="id_Integer" value="1"/>
-</talendfile:ContextType>
