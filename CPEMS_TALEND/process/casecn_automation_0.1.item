@@ -17,10 +17,7 @@
     <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_ckiB3RxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_ckiB3hxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_ckiB3xxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_dir" prompt="occ_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_input" internalId="_ckiB4BxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/talend_output" internalId="_ckiB4RxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ckiB4hxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="resources_dir" prompt="resources_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="I:/My Drive/2025_DAM/01_Projects/14_WESM_Compliance_Automation/01_Working/GRG/resources" internalId="_ckiB4xxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ckiB5BxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ckiB5RxNEfGlT6zRgOuOoA"/>
     <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_FXAR4B4nEfGc9aq8hvnGzw"/>
@@ -679,7 +676,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.output_dir + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_SUBMIT.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_SUBMIT.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
@@ -759,7 +756,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.output_dir + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_SUBMIT.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_SUBMIT.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -1262,16 +1259,6 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_c6vTsBuPEfGkJpnyqNW_2A - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
