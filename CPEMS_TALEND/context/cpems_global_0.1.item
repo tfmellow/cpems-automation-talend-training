@@ -4,4 +4,6 @@
   <contextParameter xmi:id="_W0RyIxuXEfGkJpnyqNW_2A" comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_W0RyJhuXEfGkJpnyqNW_2A" comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_o4JVEBw4EfGgMu8yrBSclg" comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_o2Ea0CEBEfGyLdLULmNygA" comment="" name="keystore_jks" prompt="keystore_jks?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/JKS_keystore/talend_integ.jks"/>
+  <contextParameter xmi:id="_siPxoCEBEfGyLdLULmNygA" comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:16SzP6RMLByxQ+YQnYj0Wtv0VJTAEyrPZz76FZFl5bhG5U317t2SEg=="/>
 </talendfile:ContextType>

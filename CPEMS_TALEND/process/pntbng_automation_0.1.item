@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="dev">
-    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_ssKzwBxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_ssKzwRxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_ssKzwhxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_ssKzwxxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_ssKzxBxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_ssKzxRxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_ssKzxhxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_ssKzxxxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_ssKzyBxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_ssKzyRxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_ssKzyhxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_ssKzyxxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ssKzzhxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ssKz0BxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_ssKz0RxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_ssKz0xxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_ssKz1BxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_ssKz1RxNEfGlT6zRgOuOoA"/>
-    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_ssKz1hxNEfGlT6zRgOuOoA"/>
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_23iiwCEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="keystore_jks" prompt="keystore_jks?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_23iiwSEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_Password" value="enc:system.encryption.key.v1:RNv4bfASP9qRufYdYUMv9sKKlSTFeq+UMQK+7YH/5GeRB6JdYe3K0w==" internalId="_23iiwiEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_23iiwyEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_23iixCEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_23iixSEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_23iixiEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_23iixyEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_23iiyCEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_23iiySEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_23iiyiEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_23iiyyEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_23iizCEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_23iizSEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_23iiziEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_23iizyEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_23ii0CEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_23ii0SEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_23ii0iEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_23ii0yEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_23ii1CEHEfG9FsjWVIlqIQ"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -788,8 +790,8 @@
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:rBBu1nofnp4Ww8QBDv/dtUUOV8F/0VqmHBZjPzyIrfGYNSJBAkY=" show="false"/>
     <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" value="JKS"/>
-    <elementParameter field="FILE" name="SSL_KEYSTORE" value="&quot;D:/gprgonzalez/keystores/TALEND_INTEG/talend_integ.jks&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:5Ky0OyQia1g9ME7WVa2OKgAAR+3zc03NcDWMYsYG78HXuJi8dtFpLueY"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" value="context.keystore_jks"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="context.keystore_password"/>
     <elementParameter field="CHECK" name="VERIFY_NAME" value="true"/>
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
