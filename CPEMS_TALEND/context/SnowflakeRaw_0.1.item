@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_G_fVUCHaEfGmrO9KwoM2GQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_G_fVUSHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_warehouse" prompt="connection_SnowflakeRaw_warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEMO_WH"/>
+  <contextParameter xmi:id="_G_fVUiHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_dbSchema" prompt="connection_SnowflakeRaw_dbSchema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MAPPING"/>
+  <contextParameter xmi:id="_G_fVUyHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_role" prompt="connection_SnowflakeRaw_role?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_G_fVVCHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_userId" prompt="connection_SnowflakeRaw_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TALEND_INTEG"/>
+  <contextParameter xmi:id="_G_fVVSHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_loginTimeout" prompt="connection_SnowflakeRaw_loginTimeout?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="15"/>
+  <contextParameter xmi:id="_G_fVViHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_jdbcParameters" prompt="connection_SnowflakeRaw_jdbcParameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_G_fVVyHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_account" prompt="connection_SnowflakeRaw_account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="firstgen.ap-southeast-1"/>
+  <contextParameter xmi:id="_G_fVWCHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_keyAlias" prompt="connection_SnowflakeRaw_keyAlias?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Snowflake"/>
+  <contextParameter xmi:id="_G_fVWSHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_jdbcUrlSuffix" prompt="connection_SnowflakeRaw_jdbcUrlSuffix?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=".snowflakecomputing.com"/>
+  <contextParameter xmi:id="_G_fVWiHaEfGmrO9KwoM2GQ" comment="" name="connection_SnowflakeRaw_database" prompt="connection_SnowflakeRaw_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+</talendfile:ContextType>

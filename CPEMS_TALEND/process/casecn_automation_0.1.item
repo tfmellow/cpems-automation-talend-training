@@ -6,8 +6,6 @@
     <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_3G9e0iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_3G9e0yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_3G9e1CEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="keystore_jks" prompt="keystore_jks?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_3G9e1SEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_Password" value="enc:system.encryption.key.v1:G7katHzOeWz0y1By0BOVaR3gwlbJ5l3Rn7rd465HROGtKmh4oZ9P6Q==" internalId="_3G9e1iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e1yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2CEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2SEHEfG9FsjWVIlqIQ"/>
@@ -26,6 +24,8 @@
     <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_3G9e5iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_3G9e5yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_3G9e6CEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="connection_keystore_Password" prompt="connection_keystore_Password?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_Password" value="enc:system.encryption.key.v1:w8ubxSgN67yC1JyByYDgO4DxJHNPR9YLys0JwnS/44gdpLjEQB1+CA==" internalId="_vgbX8CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_vgbX8SHbEfGmrO9KwoM2GQ"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -279,19 +279,21 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="snowflake_fgen"/>
-    <elementParameter field="TEXT" name="configuration.account" value="&quot;firstgen.ap-southeast-1&quot;"/>
+    <elementParameter field="TEXT" name="configuration.account" value="context.SnowflakeRaw_account"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="KEY_PAIR"/>
-    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="&quot;TALEND_INTEG&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.SnowflakeRaw_userId"/>
     <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="enc:system.encryption.key.v1:f4lMPYXlfPqast7epsspkCUThflZrqd4RnrvZIsLwbrEm8st8hoMllGdiF4=" show="false"/>
-    <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;Snowflake&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="context.SnowflakeRaw_keyAlias"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
-    <elementParameter field="TEXT" name="configuration.warehouse" value="&quot;DEMO_WH&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dbSchema" value="&quot;MAPPING&quot;"/>
-    <elementParameter field="TEXT" name="configuration.database" value="&quot;DEV&quot;"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="context.SnowflakeRaw_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.SnowflakeRaw_dbSchema"/>
+    <elementParameter field="TEXT" name="configuration.database" value="context.SnowflakeRaw_database"/>
     <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
     <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
-    <elementParameter field="TEXT" name="configuration.loginTimeout" value="15"/>
-    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="context.SnowflakeRaw_jdbcParameters"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="context.SnowflakeRaw_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.role" value="context.SnowflakeRaw_role"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="context.SnowflakeRaw_jdbcUrlSuffix"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
     <metadata connector="FLOW" name="tDBConnection_1"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
