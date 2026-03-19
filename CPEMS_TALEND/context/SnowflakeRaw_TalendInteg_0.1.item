@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_kKzOICJ4EfGAKa-3IftTjg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_kKzOISJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Account" prompt="connection_Raw_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="firstgen.ap-southeast-1"/>
+  <contextParameter xmi:id="_kKzOIiJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_User_Id" prompt="connection_Raw_User_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TALEND_INTEG"/>
+  <contextParameter xmi:id="_kKzOIyJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Key_Alias" prompt="connection_Raw_Key_Alias?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Snowflake"/>
+  <contextParameter xmi:id="_kKzOJCJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Warehouse" prompt="connection_Raw_Warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEMO_WH"/>
+  <contextParameter xmi:id="_kKzOJSJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Schema" prompt="connection_Raw_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MAPPING"/>
+  <contextParameter xmi:id="_kKzOJiJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Database" prompt="connection_Raw_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+  <contextParameter xmi:id="_kKzOJyJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Additional_JDBC_Parameters" prompt="connection_Raw_Additional_JDBC_Parameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_kKzOKCJ4EfGAKa-3IftTjg" comment="" name="connection_Raw_Role" prompt="connection_Raw_Role?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
