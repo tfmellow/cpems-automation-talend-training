@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_qmE90CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_qmE90SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_qmE90iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_qmE90yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_qmE91CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_qmE91SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_qmE91iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_Header" prompt="daily_gen_Header?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="11" internalId="_qmE91yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_qmE92CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_qmE92SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_qmE92iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_qmE92yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_qmE93CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_qmE93SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_qmE93iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_qmOu0CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_qmOu0SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_qmOu0iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_qmOu0yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="connection_keystore_Password" prompt="connection_keystore_Password?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_Password" value="enc:system.encryption.key.v1:sYe2h07/DoK6HvuMyX0XT5qlFcCeWhVRhmX5f5tGrb7up/vjYfsxAA==" internalId="_vR5MsCHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_vR5MsSHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="connection_Raw_Account" prompt="connection_Raw_Account?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="firstgen.ap-southeast-1" internalId="_xWuK8CJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Role" prompt="connection_Raw_Role?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="" internalId="_xWuK8SJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Database" prompt="connection_Raw_Database?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="DEV" internalId="_xWuK8iJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Warehouse" prompt="connection_Raw_Warehouse?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="DEMO_WH" internalId="_xWuK8yJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Additional_JDBC_Parameters" prompt="connection_Raw_Additional_JDBC_Parameters?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="" internalId="_xWuK9CJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Schema" prompt="connection_Raw_Schema?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="MAPPING" internalId="_xWuK9SJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_User_Id" prompt="connection_Raw_User_Id?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="TALEND_INTEG" internalId="_xWuK9iJ6EfGAKa-3IftTjg"/>
+    <contextParameter comment="" name="connection_Raw_Key_Alias" prompt="connection_Raw_Key_Alias?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="Snowflake" internalId="_xWuK9yJ6EfGAKa-3IftTjg"/>
+  </context>
   <context confirmationNeeded="false" hide="false" name="dev">
     <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_qmE90CHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_qmE90SHbEfGmrO9KwoM2GQ"/>
@@ -656,92 +687,11 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="880">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + context.target_date + &quot;_SUBMIT.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value="ARIAL"/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Id" id="0"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Resource_ID" id="2"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Classification" id="4"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Trading_Hour" id="6"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Probable_Breach_Flag" id="8"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_Type" id="10"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Reasons" id="12"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Date_From" id="14"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Date_To" id="16"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Brief_Description" id="18"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="File" id="20"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Status" id="22"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Registered_Capacity" id="24"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Offered_Capacity" id="26"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false" id="27"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:OlirUlOI1Ji9TqgLgVmi5s+xm9IamD5rT4mgpCOX" show="false"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="CHECK" name="USE_SHARED_STRINGS_TABLE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="save as .xlsx"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputExcel_1">
-      <column comment="" key="false" length="25" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="760">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot;+ context.target_date +&quot;_SUBMIT.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/For Upload&quot; + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot;+ context.target_date +&quot;_FINAL.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -766,7 +716,55 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="save as .csv"/>
+    <elementParameter field="TEXT" name="LABEL" value="save as _FINAL.csv"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="25" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Resource_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Classification" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Trading_Hour" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Probable_Breach_Flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Violation_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="Reasons" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Date_From" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Date_To" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="Brief_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="File" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Registered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot;+ context.target_date +&quot;_INITIAL.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="save as _INITIAL.csv"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="25" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -2569,13 +2567,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_2" target="tFileOutputExcel_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_2" target="tFileOutputDelimited_1">
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_2" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_2" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="-50" offsetLabelY="50" source="tPrejob_1" target="tSetKeystore_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
