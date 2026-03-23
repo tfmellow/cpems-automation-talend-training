@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Lvng8BuOEfGkJpnyqNW_2A" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_Lvng8RuOEfGkJpnyqNW_2A" comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
-  <contextParameter xmi:id="_Lvng8huOEfGkJpnyqNW_2A" comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
-  <contextParameter xmi:id="_Lvng8xuOEfGkJpnyqNW_2A" comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII"/>
-  <contextParameter xmi:id="_Lvng9BuOEfGkJpnyqNW_2A" comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
-</talendfile:ContextType>

@@ -10,14 +10,14 @@
     <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_qmE92CHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_qmE92SHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_qmE92iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_qmE92yHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_qmE93CHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_qmE93SHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_qmE93iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_qmOu0CHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_qmOu0SHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_qmOu0iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_qmOu0yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII" internalId="_qmE92yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;" internalId="_qmE93CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_qmE93SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" internalId="_qmE93iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII" internalId="_qmOu0CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;" internalId="_qmOu0SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_qmOu0iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" internalId="_qmOu0yHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_keystore_Password" prompt="connection_keystore_Password?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_Password" value="enc:system.encryption.key.v1:sYe2h07/DoK6HvuMyX0XT5qlFcCeWhVRhmX5f5tGrb7up/vjYfsxAA==" internalId="_vR5MsCHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_vR5MsSHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_Raw_Account" prompt="connection_Raw_Account?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="firstgen.ap-southeast-1" internalId="_xWuK8CJ6EfGAKa-3IftTjg"/>
@@ -39,14 +39,14 @@
     <contextParameter comment="" name="daily_gen_LastColumn" prompt="daily_gen_LastColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="" internalId="_qmE92CHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="daily_gen_Limit" prompt="daily_gen_Limit?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="25" internalId="_qmE92SHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="daily_gen_ThousandSeparator" prompt="daily_gen_ThousandSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="','" internalId="_qmE92iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="US-ASCII" internalId="_qmE92yHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_qmE93CHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_qmE93SHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_rjkKcAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_qmE93iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="US-ASCII" internalId="_qmOu0CHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;,&quot;" internalId="_qmOu0SHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_qmOu0iHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_qmOu0yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Encoding" prompt="fgen_plant_outage_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII" internalId="_qmE92yHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_FieldSeparator" prompt="fgen_plant_outage_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;" internalId="_qmE93CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_Header" prompt="fgen_plant_outage_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_qmE93SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="fgen_plant_outage_csv_RowSeparator" prompt="fgen_plant_outage_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" internalId="_qmE93iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Encoding" prompt="occ_csv_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII" internalId="_qmOu0CHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_FieldSeparator" prompt="occ_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;" internalId="_qmOu0SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_qmOu0iHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;" internalId="_qmOu0yHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_keystore_Password" prompt="connection_keystore_Password?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_Password" value="enc:system.encryption.key.v1:sYe2h07/DoK6HvuMyX0XT5qlFcCeWhVRhmX5f5tGrb7up/vjYfsxAA==" internalId="_vR5MsCHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="D:/gprgonzalez/keystores/TALEND_INTEG/talend_integ.jks" internalId="_vR5MsSHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_Raw_Account" prompt="connection_Raw_Account?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="firstgen.ap-southeast-1" internalId="_xWuK8CJ6EfGAKa-3IftTjg"/>
@@ -830,12 +830,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/FGEN_Plant_Outage_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.fgen_plant_outage_csv_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.fgen_plant_outage_csv_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.fgen_plant_outage_csv_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.fgen_plant_outage_csv_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -864,7 +864,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.fgen_plant_outage_csv_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -883,7 +883,7 @@
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="outage"/>
+    <elementParameter field="TEXT" name="LABEL" value="fgen_plant_outage.csv"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
       <column comment="" key="false" length="16" name="STATUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1032,12 +1032,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_csv_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.occ_csv_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -1086,7 +1086,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -1267,12 +1267,12 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_csv_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="context.occ_csv_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
@@ -1321,7 +1321,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
@@ -1504,12 +1504,12 @@
       <elementValue elementRef="SHEETNAME" value="&quot;Daily&quot;" id="0"/>
       <elementValue elementRef="USE_REGEX" value="" id="1"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="context.daily_gen_Header"/>
+    <elementParameter field="TEXT" name="HEADER" value="11"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value="context.daily_gen_Limit"/>
+    <elementParameter field="TEXT" name="LIMIT" value="25"/>
     <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="context.daily_gen_FirstColumn"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value="context.daily_gen_LastColumn"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="14"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_vjSYMA1iEfGlZ_5HjPlIug - metadata" show="false"/>
@@ -1592,8 +1592,8 @@
       <elementValue elementRef="CONVERTDATE" value="false" id="40"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="41"/>
     </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.daily_gen_Encoding"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
     <elementParameter field="CHECK" name="FORMAT_DATE_CELLS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
@@ -2265,9 +2265,9 @@
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.occ_csv_FieldSeparator"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -2319,7 +2319,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="context.occ_csv_Encoding"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
