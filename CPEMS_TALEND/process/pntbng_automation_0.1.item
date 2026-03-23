@@ -156,7 +156,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="360">
+  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
     <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
@@ -230,7 +230,7 @@
       <column comment="" key="false" length="1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="360">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -300,7 +300,7 @@
       <column comment="" key="false" length="1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="560" sizeX="80" sizeY="40">
+  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="600" sizeX="80" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dA" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -346,9 +346,9 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="560">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;current_logic&quot;, input_row.COMPLIANCE_LOGIC);&#xD;&#xA;globalMap.put(&quot;current_reason&quot;, input_row.REASONS);&#xD;&#xA;globalMap.put(&quot;current_desc&quot;, input_row.BRIEF_DESCRIPTION);&#xD;&#xA;globalMap.put(&quot;current_attach&quot;, input_row.ATTACHMENTS);&#xD;&#xA;globalMap.put(&quot;current_resource_id&quot;, input_row.RESOURCE_ID);&#xD;&#xA;&#xD;&#xA;output_row.PLANT_ENTITY = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.RESOURCE_ID = input_row.RESOURCE_ID;&#xD;&#xA;output_row.COMPLIANCE_TYPE = input_row.COMPLIANCE_TYPE;&#xD;&#xA;output_row.LOGIC_PRIORITY = input_row.LOGIC_PRIORITY;&#xD;&#xA;output_row.COMPLIANCE_LOGIC = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;output_row.ENTRY_TAG = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.REASONS = input_row.REASONS;&#xD;&#xA;output_row.BRIEF_DESCRIPTION = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;output_row.ATTACHMENTS = input_row.ATTACHMENTS;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//get date from your globalMap &#xD;&#xA;String dateVal = (String)globalMap.get(&quot;InputDate&quot;);&#xD;&#xA;&#xD;&#xA;String rawLogic  = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;String rawReason = input_row.REASONS;&#xD;&#xA;String rawDesc   = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;String rawAttach = input_row.ATTACHMENTS;&#xD;&#xA;&#xD;&#xA;String finalLogic  = (rawLogic == null)  ? &quot;NA&quot; : rawLogic.replace(&quot;[DATE]&quot;, dateVal);&#xD;&#xA;String finalReason = (rawReason == null) ? &quot;NA&quot; : rawReason.replace(&quot;[DATE]&quot;, dateVal);&#xD;&#xA;String finalDesc   = (rawDesc == null)   ? &quot;NA&quot; : rawDesc.replace(&quot;[DATE]&quot;, dateVal);&#xD;&#xA;String finalAttach = (rawAttach == null) ? &quot;NA&quot; : rawAttach.replace(&quot;[DATE]&quot;, dateVal);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;current_logic&quot;, finalLogic);&#xD;&#xA;globalMap.put(&quot;current_reason&quot;, finalReason);&#xD;&#xA;globalMap.put(&quot;current_desc&quot;, finalDesc);&#xD;&#xA;globalMap.put(&quot;current_attach&quot;, finalAttach);&#xD;&#xA;globalMap.put(&quot;current_resource_id&quot;, input_row.RESOURCE_ID);&#xD;&#xA;&#xD;&#xA;output_row.PLANT_ENTITY      = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.RESOURCE_ID       = input_row.RESOURCE_ID;&#xD;&#xA;output_row.COMPLIANCE_TYPE   = input_row.COMPLIANCE_TYPE;&#xD;&#xA;output_row.LOGIC_PRIORITY    = input_row.LOGIC_PRIORITY;&#xD;&#xA;output_row.COMPLIANCE_LOGIC  = finalLogic;&#xD;&#xA;output_row.ENTRY_TAG         = input_row.PLANT_ENTITY;&#xD;&#xA;output_row.REASONS           = finalReason;&#xD;&#xA;output_row.BRIEF_DESCRIPTION = finalDesc;&#xD;&#xA;output_row.ATTACHMENTS       = finalAttach;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//String rawAttach = input_row.ATTACHMENTS;&#xD;&#xA;//String finalAttach = rawAttach.replace(&quot;[DATE]&quot;, (String)globalMap.get(&quot;InputDate&quot;));&#xD;&#xA;//&#xD;&#xA;//globalMap.put(&quot;current_logic&quot;, input_row.COMPLIANCE_LOGIC);&#xD;&#xA;//globalMap.put(&quot;current_reason&quot;, input_row.REASONS);&#xD;&#xA;//globalMap.put(&quot;current_desc&quot;, input_row.BRIEF_DESCRIPTION);&#xD;&#xA;//globalMap.put(&quot;current_attach&quot;, finalAttach);&#xD;&#xA;//globalMap.put(&quot;current_resource_id&quot;, input_row.RESOURCE_ID);&#xD;&#xA;//&#xD;&#xA;//&#xD;&#xA;//output_row.PLANT_ENTITY = input_row.PLANT_ENTITY;&#xD;&#xA;//output_row.RESOURCE_ID = input_row.RESOURCE_ID;&#xD;&#xA;//output_row.COMPLIANCE_TYPE = input_row.COMPLIANCE_TYPE;&#xD;&#xA;//output_row.LOGIC_PRIORITY = input_row.LOGIC_PRIORITY;&#xD;&#xA;//output_row.COMPLIANCE_LOGIC = input_row.COMPLIANCE_LOGIC;&#xD;&#xA;//output_row.ENTRY_TAG = input_row.PLANT_ENTITY;&#xD;&#xA;//output_row.REASONS = input_row.REASONS;&#xD;&#xA;//output_row.BRIEF_DESCRIPTION = input_row.BRIEF_DESCRIPTION;&#xD;&#xA;//output_row.ATTACHMENTS = finalAttach;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -363,7 +363,7 @@
       <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1800" posY="560">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -412,7 +412,7 @@
       <column comment="" key="false" length="1000" name="ATTACHMENTS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHSQLDbRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1960" posY="560">
+  <node componentName="tHSQLDbRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
     <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
@@ -473,7 +473,7 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="760">
+  <node componentName="tHSQLDbInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
     <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
@@ -541,7 +541,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="760">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_2" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="Resource_ID" id="0"/>
@@ -573,7 +573,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="760">
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_26" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;" show="false"/>
@@ -599,7 +599,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="760">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -663,7 +663,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1920" posY="760">
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1720" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_2" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_2">
@@ -683,7 +683,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="880">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="920">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -731,7 +731,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="760">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1880" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -798,11 +798,11 @@
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1520">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="1560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_3" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="1520">
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -816,12 +816,12 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="2" offsetLabelY="0" posX="160" posY="920" sizeX="240" sizeY="40">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="2" offsetLabelY="0" posX="160" posY="1000" sizeX="240" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/FGEN_Plant_Outage_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="1080">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="1160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_8pERcAKHEfGYU9RPx5hVKA - metadata" show="false"/>
@@ -902,7 +902,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1080">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -939,7 +939,7 @@
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="1080">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="1160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
@@ -958,7 +958,7 @@
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="760">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -989,7 +989,7 @@
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="760">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="840">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -1008,7 +1008,7 @@
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSetKeystore" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="1520">
+  <node componentName="tSetKeystore" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1560" posY="1560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetKeystore_2" show="false"/>
     <elementParameter field="RADIO" name="SET_TRUSTSTORE" value="false"/>
     <elementParameter field="RADIO" name="NEED_CLIENT_AUTH" value="true"/>
@@ -1023,7 +1023,7 @@
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="720">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_c6vTsBuPEfGkJpnyqNW_2A - metadata" show="false"/>
@@ -1164,7 +1164,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="720">
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_23" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;" show="false"/>
@@ -1191,7 +1191,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="720">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1258,7 +1258,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1240">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_c6vTsBuPEfGkJpnyqNW_2A - metadata" show="false"/>
@@ -1399,7 +1399,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1360">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1494,7 +1494,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1360">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_4" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot;+ globalMap.get(&quot;InputDate&quot;) +&quot;/Plant Data/DAILY_GEN_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.xlsx&quot;"/>
@@ -1640,7 +1640,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1360">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Id" id="0"/>
@@ -1704,7 +1704,7 @@
       <column comment="" key="false" length="1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1360">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="Resource_ID" id="0"/>
@@ -1738,7 +1738,7 @@
       <column comment="" key="false" length="1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1360">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1808,7 +1808,7 @@
       <column comment="" key="false" length="1" name="Has_Outage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1480">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
@@ -1824,7 +1824,7 @@
       <column comment="" key="false" length="7" name="DESCRIPTION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHSQLDbOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1360">
+  <node componentName="tHSQLDbOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" value="HSQLDB_IN_MEMORY"/>
     <elementParameter field="CHECK" name="TLS" value="false" show="false"/>
@@ -1985,7 +1985,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1200">
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="1240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
     <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
@@ -2007,7 +2007,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="1200">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="1240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_8" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2065,7 +2065,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1040">
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="1080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tStatCatcher_1">
@@ -2085,7 +2085,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1520" posY="1040">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="1080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_7" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2149,7 +2149,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="1360">
+  <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="1400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeterCatcher_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeterCatcher_1">
@@ -2170,7 +2170,7 @@
       <column defaultValue="" key="false" length="255" name="thresholds" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="1360">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="1400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -2237,19 +2237,19 @@
       <column defaultValue="" key="false" length="255" name="thresholds" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="400" sizeX="161" sizeY="40">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="360" sizeX="161" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_2" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FGHPC_PNTBNG_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="400">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="globalMap.put(&quot;error_reason&quot;, &quot;OCC FILE DOES NOT EXIST.&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="400">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;ABORTING: &quot; + (String)globalMap.get(&quot;error_reason&quot;)"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
@@ -2258,7 +2258,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="560">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
@@ -2397,14 +2397,14 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="560">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//We only care about the first data row&#xD;&#xA;String reasons = input_row.Reasons;&#xD;&#xA;String briefDesc = input_row.Brief_Description;&#xD;&#xA;String dateFrom = input_row.Date_From;&#xD;&#xA;&#xD;&#xA;//Logic: If these are not null and not &quot;Select Reason...&quot; or empty, it's tagged.&#xD;&#xA;boolean hasReasons = (reasons != null &amp;&amp; !reasons.trim().isEmpty() &amp;&amp; !reasons.contains(&quot;Select Reason&quot;));&#xD;&#xA;boolean hasBriefDesc = (briefDesc != null &amp;&amp; !briefDesc.trim().isEmpty());&#xD;&#xA;boolean hasDateFrom = (dateFrom != null &amp;&amp; !dateFrom.trim().isEmpty());&#xD;&#xA;&#xD;&#xA;if (hasReasons || hasBriefDesc || hasDateFrom) {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, true);&#xD;&#xA; globalMap.put(&quot;error_reason&quot;, &quot;TAGGED FILE DETECTED: This file already contains tagging logic/descriptions. Try entering another input date.&quot;);&#xD;&#xA;} else {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (globalMap.get(&quot;is_invalid_file&quot;) == null) {&#xD;&#xA;    globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Optional: Print to console so you can see the 'Peek'&#xD;&#xA;System.out.println(&quot;Validation Peek - Reasons: [&quot; + reasons + &quot;] | Is Tagged: &quot; + globalMap.get(&quot;is_invalid_file&quot;));"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="560">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;ABORTING: &quot; + (String)globalMap.get(&quot;error_reason&quot;)"/>
     <elementParameter field="TEXT" name="CODE" value="2"/>
