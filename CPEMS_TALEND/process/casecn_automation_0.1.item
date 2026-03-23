@@ -5,10 +5,8 @@
     <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_3G9e0SEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_3G9e0iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_3G9e0yEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_3G9e1CEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e1yEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2CEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2SEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_3G9e1CEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="20260303" internalId="_3G9e1yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_3G9e2iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_3G9e2yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_3G9e3CEHEfG9FsjWVIlqIQ"/>
@@ -40,10 +38,8 @@
     <contextParameter comment="" name="chepp_capability_csv_FieldSeparator" prompt="chepp_capability_csv_FieldSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;,&quot;" internalId="_3G9e0SEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="chepp_capability_csv_Header" prompt="chepp_capability_csv_Header?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_Integer" value="1" internalId="_3G9e0iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="chepp_capability_csv_RowSeparator" prompt="chepp_capability_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_wfvJgAyKEfGi3_Qa9l5WMw" type="id_String" value="&quot;\n&quot;" internalId="_3G9e0yEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_3G9e1CEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e1yEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="target_date" prompt="target_date?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2CEHEfG9FsjWVIlqIQ"/>
-    <contextParameter comment="" name="target_date_dir" prompt="target_date_dir?" promptNeeded="false" repositoryContextId="_RwYDMAJYEfGtd7uBl15eqg" type="id_String" value="" internalId="_3G9e2SEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="daily_dir" prompt="daily_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="G:/My Drive/NMMS/CPEMS/Daily" internalId="_3G9e1CEHEfG9FsjWVIlqIQ"/>
+    <contextParameter comment="" name="parameter_InputDate" prompt="parameter_InputDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="20260303" internalId="_3G9e1yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_DecimalSeparator" prompt="daily_gen_DecimalSeparator?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="'.'" internalId="_3G9e2iEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_Encoding" prompt="daily_gen_Encoding?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_String" value="UTF-8" internalId="_3G9e2yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="daily_gen_FirstColumn" prompt="daily_gen_FirstColumn?" promptNeeded="false" repositoryContextId="_1exNQA1kEfGlZ_5HjPlIug" type="id_Integer" value="1" internalId="_3G9e3CEHEfG9FsjWVIlqIQ"/>
@@ -60,7 +56,7 @@
     <contextParameter comment="" name="occ_csv_Header" prompt="occ_csv_Header?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_Integer" value="1" internalId="_3G9e5yEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="occ_csv_RowSeparator" prompt="occ_csv_RowSeparator?" promptNeeded="false" repositoryContextId="_LvXpUBuOEfGkJpnyqNW_2A" type="id_String" value="&quot;\n&quot;" internalId="_3G9e6CEHEfG9FsjWVIlqIQ"/>
     <contextParameter comment="" name="connection_keystore_Password" prompt="connection_keystore_Password?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_Password" value="enc:system.encryption.key.v1:w8ubxSgN67yC1JyByYDgO4DxJHNPR9YLys0JwnS/44gdpLjEQB1+CA==" internalId="_vgbX8CHbEfGmrO9KwoM2GQ"/>
-    <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="C:/JKS_keystore/talend_integ.jks" internalId="_vgbX8SHbEfGmrO9KwoM2GQ"/>
+    <contextParameter comment="" name="connection_keystore_Filepath" prompt="connection_keystore_Filepath?" promptNeeded="false" repositoryContextId="_mnonwCHaEfGmrO9KwoM2GQ" type="id_String" value="D:/gprgonzalez/keystores/TALEND_INTEG/talend_integ.jks" internalId="_vgbX8SHbEfGmrO9KwoM2GQ"/>
     <contextParameter comment="" name="connection_Raw_Account" prompt="connection_Raw_Account?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="firstgen.ap-southeast-1" internalId="_uCf2kCJ5EfGAKa-3IftTjg"/>
     <contextParameter comment="" name="connection_Raw_Role" prompt="connection_Raw_Role?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="" internalId="_uCf2kSJ5EfGAKa-3IftTjg"/>
     <contextParameter comment="" name="connection_Raw_Database" prompt="connection_Raw_Database?" promptNeeded="false" repositoryContextId="_kKg6QCJ4EfGAKa-3IftTjg" type="id_String" value="DEV" internalId="_uCf2kiJ5EfGAKa-3IftTjg"/>
@@ -720,7 +716,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/For Upload&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_FINAL.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/For Upload&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;_FINAL.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -768,7 +764,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Processed&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;_INITIAL.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Processed&quot; + &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;_INITIAL.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -835,13 +831,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280" sizeX="161" sizeY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//get d-1 directory&#xD;&#xA;&#xD;&#xA;String InputDate = ((String)globalMap.get(&quot;InputDate&quot;));&#xD;&#xA;context.target_date_dir = &quot;/&quot; + InputDate;&#xD;&#xA;context.target_date = InputDate;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;Success!&quot;);&#xD;&#xA;System.out.println(&quot;Processing Folder: &quot; + context.target_date);&#xD;&#xA;"/>
-    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2"/>
-  </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
@@ -894,7 +883,7 @@
   </node>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="2" offsetLabelY="0" posX="120" posY="800" sizeX="200" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_2" show="false"/>
-    <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + context.target_date_dir + &quot;/FGEN_Plant_Outage_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + &quot;/&quot;+ globalMap.get(&quot;InputDate&quot;) + &quot;/FGEN_Plant_Outage_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="800">
@@ -904,7 +893,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + context.target_date_dir + &quot;/FGEN_Plant_Outage_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot;+ globalMap.get(&quot;InputDate&quot;) + &quot;/FGEN_Plant_Outage_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.fgen_plant_outage_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.fgen_plant_outage_csv_RowSeparator" show="false"/>
@@ -980,17 +969,17 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_8" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="STATUS" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
@@ -1041,7 +1030,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
@@ -1269,14 +1258,14 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="1560">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_c6vTsBuPEfGkJpnyqNW_2A - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_csv_RowSeparator" show="false"/>
@@ -1410,7 +1399,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1560">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1477,7 +1466,7 @@
       <column comment="" key="false" length="25" name="Offered_Capacity" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="1560">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Trading_Hour" id="0"/>
@@ -1499,7 +1488,7 @@
       <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="1560">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="Trading_Hour" id="0"/>
@@ -1516,7 +1505,7 @@
       <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="1560">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -1544,7 +1533,7 @@
       <column comment="" key="false" length="-1" name="Total_Offered_Capacity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="11" offsetLabelY="-2" posX="1440" posY="1560">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="11" offsetLabelY="-2" posX="1120" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -1567,7 +1556,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
@@ -1814,7 +1803,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/CHEPP_Capability_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/CHEPP_Capability_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.chepp_capability_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -2274,7 +2263,7 @@
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="context.occ_csv_RowSeparator"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="context.occ_RowSeparator" show="false"/>
@@ -2410,7 +2399,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//We only care about the first data row&#xD;&#xA;String reasons = input_row.Reasons;&#xD;&#xA;String briefDesc = input_row.Brief_Description;&#xD;&#xA;String dateFrom = input_row.Date_From;&#xD;&#xA;&#xD;&#xA;//Logic: If these are not null and not &quot;Select Reason...&quot; or empty, it's tagged.&#xD;&#xA;boolean hasReasons = (reasons != null &amp;&amp; !reasons.trim().isEmpty() &amp;&amp; !reasons.contains(&quot;Select Reason&quot;));&#xD;&#xA;boolean hasBriefDesc = (briefDesc != null &amp;&amp; !briefDesc.trim().isEmpty());&#xD;&#xA;boolean hasDateFrom = (dateFrom != null &amp;&amp; !dateFrom.trim().isEmpty());&#xD;&#xA;&#xD;&#xA;if (hasReasons || hasBriefDesc || hasDateFrom) {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, true);&#xD;&#xA; globalMap.put(&quot;error_reason&quot;, &quot;TAGGED FILE DETECTED: This file already contains tagging logic/descriptions. Try entering another input date.&quot;);&#xD;&#xA;} else {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (globalMap.get(&quot;is_invalid_file&quot;) == null) {&#xD;&#xA;    globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Optional: Print to console so you can see the 'Peek'&#xD;&#xA;System.out.println(&quot;Validation Peek - Reasons: [&quot; + reasons + &quot;] | Is Tagged: &quot; + globalMap.get(&quot;is_invalid_file&quot;));"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// get from first row of data&#xD;&#xA;String reasons = input_row.Reasons;&#xD;&#xA;String briefDesc = input_row.Brief_Description;&#xD;&#xA;String dateFrom = input_row.Date_From;&#xD;&#xA;&#xD;&#xA;// if the following are not null and not &quot;Select Reason...&quot; or empty, it's tagged.&#xD;&#xA;boolean hasReasons = (reasons != null &amp;&amp; !reasons.trim().isEmpty() &amp;&amp; !reasons.contains(&quot;Select Reason&quot;));&#xD;&#xA;boolean hasBriefDesc = (briefDesc != null &amp;&amp; !briefDesc.trim().isEmpty());&#xD;&#xA;boolean hasDateFrom = (dateFrom != null &amp;&amp; !dateFrom.trim().isEmpty());&#xD;&#xA;&#xD;&#xA;if (hasReasons || hasBriefDesc || hasDateFrom) {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, true);&#xD;&#xA; globalMap.put(&quot;error_reason&quot;, &quot;TAGGED FILE DETECTED: This file already contains tagging logic/descriptions. Try entering another input date.&quot;);&#xD;&#xA;} else {&#xD;&#xA; globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (globalMap.get(&quot;is_invalid_file&quot;) == null) {&#xD;&#xA;    globalMap.put(&quot;is_invalid_file&quot;, false);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// print&#xD;&#xA;System.out.println(&quot;Validation - Reasons: [&quot; + reasons + &quot;] | Is Tagged: &quot; + globalMap.get(&quot;is_invalid_file&quot;));"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
@@ -2678,7 +2667,7 @@
   </node>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="280" sizeX="161" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
-    <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + &quot;/&quot; + context.target_date + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + context.target_date + &quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.daily_dir + &quot;/&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;/Flags&quot; +  &quot;/CPEMS_FRLC_CASECN_OCC_&quot; + globalMap.get(&quot;InputDate&quot;) + &quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="440">
@@ -2848,9 +2837,6 @@
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileExist_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHashOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3036,13 +3022,6 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="get d-1 date and directory"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
